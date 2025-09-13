@@ -198,10 +198,36 @@
             if (isDesktop) {
                 // If switching to desktop, collapse all mobile cards
                 collapseAllMobileCards();
+                // Add h-25 class to all cards for desktop
+                addCardHeightClass();
             } else {
                 // If switching to mobile, clear card selection
                 clearCardSelection();
+                // Remove h-25 class from all cards for mobile
+                removeCardHeightClass();
             }
+        }
+
+        // Add h-25 class to all cards for desktop
+        function addCardHeightClass() {
+            const facts = {{ ai_facts | tojson }};
+            facts.forEach(fact => {
+                const card = document.querySelector(`[onclick="handleCardClick('${fact.id}')"]`);
+                if (card) {
+                    card.classList.add('h-25');
+                }
+            });
+        }
+
+        // Remove h-25 class from all cards for mobile
+        function removeCardHeightClass() {
+            const facts = {{ ai_facts | tojson }};
+            facts.forEach(fact => {
+                const card = document.querySelector(`[onclick="handleCardClick('${fact.id}')"]`);
+                if (card) {
+                    card.classList.remove('h-25');
+                }
+            });
         }
 
         // Clear card selection (remove highlights)
@@ -232,6 +258,11 @@
                 // Desktop: select card1 and show its content
                 useContent('card1');
                 highlightSelectedCard('card1');
+                // Add h-25 class for desktop
+                addCardHeightClass();
+            } else {
+                // Remove h-25 class for mobile
+                removeCardHeightClass();
             }
             
             // Add any other initialization code here
