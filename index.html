@@ -169,7 +169,7 @@
         <div class="row">
             <!-- Column 1 - 4 small sections -->
             <div class="col-md-4 mb-4">
-            <div class="card h-20 mb-3" onclick="toggleCardContent('card1')" style="cursor: pointer;">
+            <div class="card h-20 mb-3" onclick="useContent('card1')" style="cursor: pointer;">
                 <div class="card-body">
                     <h5 class="card-title">Hundreds of AI leaders, including Nobel Prize-winning scientists and CEOs, agreed that AI could lead to human extinction.</h5>
                     <div id="card1-content" class="card-text" style="display: none;">
@@ -178,7 +178,7 @@
                 </div>
             </div>
             
-            <div class="card h-20 mb-3" onclick="toggleCardContent('card2')" style="cursor: pointer;">
+            <div class="card h-20 mb-3" onclick="useContent('card2')" style="cursor: pointer;">
                 <div class="card-body">
                     <h5 class="card-title">Researchers still don't understand how AI systems work, even after decades of work and thousands of papers.</h5>
                     <div id="card2-content" class="card-text" style="display: none;">
@@ -187,7 +187,7 @@
                 </div>
             </div>
             
-            <div class="card h-20 mb-3" onclick="toggleCardContent('card3')" style="cursor: pointer;">
+            <div class="card h-20 mb-3" onclick="useContent('card3')" style="cursor: pointer;">
                 <div class="card-body">
                     <h5 class="card-title">AI systems can deceive humans even when trained not to do so.</h5>
                     <div id="card3-content" class="card-text" style="display: none;">
@@ -196,7 +196,7 @@
                 </div>
             </div>
             
-            <div class="card h-20 mb-3" onclick="toggleCardContent('card4')" style="cursor: pointer;">
+            <div class="card h-20 mb-3" onclick="useContent('card4')" style="cursor: pointer;">
                 <div class="card-body">
                     <h5 class="card-title">AI companies have repeatedly reneged on their own safety commitments.</h5>
                     <div id="card4-content" class="card-text" style="display: none;">
@@ -208,7 +208,7 @@
         
         <!-- Column 2 - 4 more sections -->
         <div class="col-md-4 mb-4">
-            <div class="card h-20 mb-3" onclick="toggleCardContent('card5')" style="cursor: pointer;">
+            <div class="card h-20 mb-3" onclick="useContent('card5')" style="cursor: pointer;">
                 <div class="card-body">
                     <h5 class="card-title">AI researchers have admitted being surprised at how fast recent AI progress has been.</h5>
                     <div id="card5-content" class="card-text" style="display: none;">
@@ -217,7 +217,7 @@
                 </div>
             </div>
             
-            <div class="card h-20 mb-3" onclick="toggleCardContent('card6')" style="cursor: pointer;">
+            <div class="card h-20 mb-3" onclick="useContent('card6')" style="cursor: pointer;">
                 <div class="card-body">
                     <h5 class="card-title">AI systems can learn to pursue unintended goals that conflict with human values.</h5>
                     <div id="card6-content" class="card-text" style="display: none;">
@@ -226,7 +226,7 @@
                 </div>
             </div>
             
-            <div class="card h-20 mb-3" onclick="toggleCardContent('card7')" style="cursor: pointer;">
+            <div class="card h-20 mb-3" onclick="useContent('card7')" style="cursor: pointer;">
                 <div class="card-body">
                     <h5 class="card-title">Once AI systems become superintelligent, they may be impossible to control or shut down.</h5>
                     <div id="card7-content" class="card-text" style="display: none;">
@@ -235,7 +235,7 @@
                 </div>
             </div>
             
-            <div class="card h-20 mb-3" onclick="toggleCardContent('card8')" style="cursor: pointer;">
+            <div class="card h-20 mb-3" onclick="useContent('card8')" style="cursor: pointer;">
                 <div class="card-body">
                     <h5 class="card-title">The window for developing safe AI may be closing as development accelerates.</h5>
                     <div id="card8-content" class="card-text" style="display: none;">
@@ -263,8 +263,6 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="facts.js"></script>
-    
     <script>
         function toggleCardContent(cardId) {
             const content = document.getElementById(cardId + '-content');
@@ -277,6 +275,13 @@
                 content.style.display = 'none';
                 toggle.innerHTML = '<em>Click to expand...</em>';
             }
+        }
+
+        function useContent(cardId) {
+            const content = document.getElementById(cardId + '-content');
+            const detailedContent = document.getElementById('detailed-content');
+
+            detailedContent.innerHTML = content.innerHTML;
         }
 
         // Social Media Sharing Functions
