@@ -128,6 +128,33 @@
             }
         }
 
+        // Collapse all mobile cards
+        function collapseAllMobileCards() {
+            const facts = {{ ai_facts | tojson }};
+            facts.forEach(fact => {
+                const content = document.getElementById(fact.id + '-content');
+                const toggle = document.getElementById(fact.id + '-toggle');
+                
+                if (content && toggle) {
+                    content.style.display = 'none';
+                    toggle.innerHTML = '<em>Click to expand...</em>';
+                }
+            });
+        }
+
+        // Handle window resize - collapse mobile cards when switching to desktop
+        function handleWindowResize() {
+            const isDesktop = window.innerWidth >= 992;
+            
+            if (isDesktop) {
+                // If switching to desktop, collapse all mobile cards
+                collapseAllMobileCards();
+            }
+        }
+
+        // Add window resize listener
+        window.addEventListener('resize', handleWindowResize);
+
         // Mobile/Tablet content display function
         function toggleCardContent(cardId) {
             const content = document.getElementById(cardId + '-content');
