@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}8 Facts About AI{% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% block extra_css %}{% endblock %}
+</head>
+<body class="bg-light">
+    <!-- Black Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">8 Facts About AI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Facts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Take Action</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-8 text-center">
+                <h1 class="display-4 fw-bold text-primary mb-4">8 Facts About AI</h1>
+            </div>
+            <div class="col-4 text-center">
+                <div class="d-flex justify-content-center gap-3 align-items-center">
+                    <a href="#" onclick="shareOnTwitter()">
+                        <img src="{{ url_for('static', filename='img/x.png') }}" alt="Share on X" width="32" height="32" style="cursor: pointer;">
+                    </a>
+                    <a href="#" onclick="shareOnFacebook()">
+                        <img src="{{ url_for('static', filename='img/facebook.png') }}" alt="Share on Facebook" width="32" height="32" style="cursor: pointer;">
+                    </a>
+                    <a href="#" onclick="shareOnLinkedIn()">
+                        <img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="Share on LinkedIn" width="32" height="32" style="cursor: pointer;">
+                    </a>
+                    <a href="#" onclick="copyLink()">
+                        <i class="fas fa-link text-primary" style="font-size: 32px; cursor: pointer;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% block content %}{% endblock %}
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
