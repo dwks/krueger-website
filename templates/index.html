@@ -64,7 +64,7 @@
                 <!-- Column 1 - 4 small sections -->
                 <div class="col-md-4 mb-4">
                     {% for fact in ai_facts[:4] %}
-                    <div class="card h-20 mb-3" onclick="handleCardClick('{{ fact.id }}')" style="cursor: pointer;">
+                    <div class="card mb-3" onclick="handleCardClick('{{ fact.id }}')" style="cursor: pointer;">
                         <div class="card-body">
                             <h5 class="card-title">{{ fact.title }}</h5>
                             <div id="{{ fact.id }}-content" class="card-text" style="display: none;">
@@ -81,7 +81,7 @@
                 <!-- Column 2 - 4 more sections -->
                 <div class="col-md-4 mb-4">
                     {% for fact in ai_facts[4:8] %}
-                    <div class="card h-20 mb-3" onclick="handleCardClick('{{ fact.id }}')" style="cursor: pointer;">
+                    <div class="card mb-3" onclick="handleCardClick('{{ fact.id }}')" style="cursor: pointer;">
                         <div class="card-body">
                             <h5 class="card-title">{{ fact.title }}</h5>
                             <div id="{{ fact.id }}-content" class="card-text" style="display: none;">
@@ -123,7 +123,7 @@
                     <a href="#" onclick="shareOnLinkedIn()">
                         <img src="static/img/linkedin.png" alt="Share on LinkedIn" width="32" height="32" style="cursor: pointer;">
                     </a>
-                    <a href="#" onclick="copyLink()">
+                    <a href="#bottomCopyLink" onclick="copyLink()" id="bottomCopyLink">
                         <i class="fas fa-link text-primary" style="font-size: 32px; cursor: pointer;"></i>
                     </a>
                 </div>
