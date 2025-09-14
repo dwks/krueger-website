@@ -255,6 +255,26 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        <!-- Action Card 5 - Mailing List -->
+                        <div class="col-md-12">
+                            <div class="card h-100 border-3">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-envelope text-primary mb-3" style="font-size: 3rem;"></i>
+                                    <h4 class="card-title">Stay Updated</h4>
+                                    <p class="card-text">Subscribe to our mailing list for the latest AI safety news, research updates, and action opportunities.</p>
+                                    <div class="d-flex justify-content-center mb-3">
+                                        <div class="input-group" style="max-width: 400px;">
+                                            <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" aria-label="Email address">
+                                            <button class="btn btn-primary" type="button" onclick="subscribeToMailingList()">
+                                                <i class="fas fa-paper-plane"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div id="subscriptionMessage" class="small text-muted"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                     <!-- Back to Facts Button -->
@@ -556,6 +576,74 @@
                 behavior: 'smooth'
             });
         }
+
+        // Subscribe to mailing list function
+        function subscribeToMailingList() {
+            const emailInput = document.getElementById('emailInput');
+            const messageDiv = document.getElementById('subscriptionMessage');
+            const email = emailInput.value.trim();
+            
+            // Basic email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (!email) {
+                messageDiv.innerHTML = '<span class="text-danger">Please enter your email address.</span>';
+                return;
+            }
+            
+            if (!emailRegex.test(email)) {
+                messageDiv.innerHTML = '<span class="text-danger">Please enter a valid email address.</span>';
+                return;
+            }
+            
+            // Show loading message
+            messageDiv.innerHTML = '<span class="text-info">Subscribing...</span>';
+            
+            // Simulate subscription process (replace with actual API call)
+            setTimeout(() => {
+                // For demo purposes, we'll show a success message
+                // In a real implementation, you would send this to your backend
+                messageDiv.innerHTML = '<span class="text-success">✓ Successfully subscribed! Check your email for confirmation.</span>';
+                emailInput.value = '';
+                
+                // Optional: Log the email for demo purposes
+                console.log('Subscribed email:', email);
+                
+                // Optional: Send to actual service (uncomment and modify as needed)
+                // fetch('/api/subscribe', {
+                //     method: 'POST',
+                //     headers: {
+                //         'Content-Type': 'application/json',
+                //     },
+                //     body: JSON.stringify({ email: email })
+                // })
+                // .then(response => response.json())
+                // .then(data => {
+                //     if (data.success) {
+                //         messageDiv.innerHTML = '<span class="text-success">✓ Successfully subscribed! Check your email for confirmation.</span>';
+                //         emailInput.value = '';
+                //     } else {
+                //         messageDiv.innerHTML = '<span class="text-danger">Subscription failed. Please try again.</span>';
+                //     }
+                // })
+                // .catch(error => {
+                //     messageDiv.innerHTML = '<span class="text-danger">Subscription failed. Please try again.</span>';
+                // });
+                
+            }, 1500);
+        }
+        
+        // Allow Enter key to submit email
+        document.addEventListener('DOMContentLoaded', function() {
+            const emailInput = document.getElementById('emailInput');
+            if (emailInput) {
+                emailInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        subscribeToMailingList();
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>
