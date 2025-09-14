@@ -148,7 +148,7 @@
                     <div class="card mb-3 border-3" onclick="handleCardClick('{{ fact.id }}')" style="cursor: pointer;">
                         <div class="card-body">
                             <h5 class="card-title">{{ fact.title }}</h5>
-                            <div id="{{ fact.id }}-content" class="card-text" style="display: none;">
+                            <div id="{{ fact.id }}-content" class="card-text" style="display: none; cursor: default;" onclick="event.stopPropagation();">
                                 {{ fact.content | safe }}
                             </div>
                             <div id="{{ fact.id }}-toggle" class="text-muted small mt-2 d-lg-none">
@@ -165,7 +165,7 @@
                     <div class="card mb-3 border-3" onclick="handleCardClick('{{ fact.id }}')" style="cursor: pointer;">
                         <div class="card-body">
                             <h5 class="card-title">{{ fact.title }}</h5>
-                            <div id="{{ fact.id }}-content" class="card-text" style="display: none;">
+                            <div id="{{ fact.id }}-content" class="card-text" style="display: none; cursor: default;" onclick="event.stopPropagation();">
                                 {{ fact.content | safe }}
                             </div>
                             <div id="{{ fact.id }}-toggle" class="text-muted small mt-2 d-lg-none">
@@ -577,7 +577,7 @@
             });
         }
 
-        // Subscribe to mailing list function
+        // Subscribe to mailing list function - Mailchimp integration
         function subscribeToMailingList() {
             const emailInput = document.getElementById('emailInput');
             const messageDiv = document.getElementById('subscriptionMessage');
@@ -599,38 +599,57 @@
             // Show loading message
             messageDiv.innerHTML = '<span class="text-info">Subscribing...</span>';
             
-            // Simulate subscription process (replace with actual API call)
+            // Use Mailchimp's embedded form for one-click subscription
+            const MAILCHIMP_FORM_URL = '{{ mailing_list["form_url"] }}';
+            
+            if (!MAILCHIMP_FORM_URL || MAILCHIMP_FORM_URL === '') {
+                messageDiv.innerHTML = '<span class="text-danger">Mailing list not configured. Please contact the administrator.</span>';
+                return;
+            }
+            
+            // Create a hidden form and submit it to Mailchimp (one-click subscription)
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = MAILCHIMP_FORM_URL;
+            form.target = 'hidden_iframe'; // Submit to hidden iframe
+            
+            const emailField = document.createElement('input');
+            emailField.type = 'email';
+            emailField.name = 'EMAIL';
+            emailField.value = email;
+            
+            const submitButton = document.createElement('input');
+            submitButton.type = 'submit';
+            submitButton.style.display = 'none';
+            
+            form.appendChild(emailField);
+            form.appendChild(submitButton);
+            document.body.appendChild(form);
+            
+            // Create hidden iframe to receive the response
+            let iframe = document.getElementById('hidden_iframe');
+            if (!iframe) {
+                iframe = document.createElement('iframe');
+                iframe.id = 'hidden_iframe';
+                iframe.name = 'hidden_iframe';
+                iframe.style.display = 'none';
+                document.body.appendChild(iframe);
+            }
+            
+            // Submit the form
+            form.submit();
+            
+            // Clean up form
+            document.body.removeChild(form);
+            
+            // Show success message immediately
+            messageDiv.innerHTML = '<span class="text-success">✓ Successfully subscribed! Check your email for confirmation.</span>';
+            emailInput.value = '';
+            
+            // Hide success message after 5 seconds
             setTimeout(() => {
-                // For demo purposes, we'll show a success message
-                // In a real implementation, you would send this to your backend
-                messageDiv.innerHTML = '<span class="text-success">✓ Successfully subscribed! Check your email for confirmation.</span>';
-                emailInput.value = '';
-                
-                // Optional: Log the email for demo purposes
-                console.log('Subscribed email:', email);
-                
-                // Optional: Send to actual service (uncomment and modify as needed)
-                // fetch('/api/subscribe', {
-                //     method: 'POST',
-                //     headers: {
-                //         'Content-Type': 'application/json',
-                //     },
-                //     body: JSON.stringify({ email: email })
-                // })
-                // .then(response => response.json())
-                // .then(data => {
-                //     if (data.success) {
-                //         messageDiv.innerHTML = '<span class="text-success">✓ Successfully subscribed! Check your email for confirmation.</span>';
-                //         emailInput.value = '';
-                //     } else {
-                //         messageDiv.innerHTML = '<span class="text-danger">Subscription failed. Please try again.</span>';
-                //     }
-                // })
-                // .catch(error => {
-                //     messageDiv.innerHTML = '<span class="text-danger">Subscription failed. Please try again.</span>';
-                // });
-                
-            }, 1500);
+                messageDiv.innerHTML = '';
+            }, 5000);
         }
         
         // Allow Enter key to submit email

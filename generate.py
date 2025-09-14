@@ -8,6 +8,11 @@ import os
 import json
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+# Mailchimp configuration from environment variables
+mailing_list = {
+    'form_url': os.getenv('MAILCHIMP_FORM_URL', '')
+}
+
 # Data for the AI facts
 ai_facts = [
     {
@@ -109,6 +114,7 @@ def generate_static_site():
     html_content = template.render(
         ai_facts=ai_facts,
         desktop_content=desktop_content,
+        mailing_list=mailing_list,
         url_for=lambda x, **kwargs: f"static/{x}"  # Mock url_for for static generation
     )
     
