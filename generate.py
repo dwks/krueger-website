@@ -13,7 +13,19 @@ ai_facts = [
     {
         'id': 'card1',
         'title': 'Hundreds of AI leaders, including Nobel Prize-winning scientists and CEOs, agreed that AI could lead to human extinction.',
-        'content': '["CAIS Statement on AI Risk" - "Mitigating the risk of extinction from AI should be a global priority…" (CAIS logo)]'
+        'content': """
+<p>In 2023, over 500 AI scientists signed this statement:</p>
+
+<h4 style="font-family: Cormorant, sans-serif;">"Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war."</h4>
+
+<p>These include Yoshua Bengio and Nobel Prize winner Geoffrey Hinton, the two most highly-cited scientists of all time, who pioneered the techniques underlying all of today’s AI systems.  Hinton quit his job at Google in 2023 to warn the public about the dangers of AI.</p>
+
+<div class="embed-responsive embed-responsive-16by9 mb-3">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/66WiF8fXL0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<p>On average, AI researchers believe there’s a <b>~15% chance</b> of extremely bad, extinction-level outcomes.</p>
+"""
     },
     {
         'id': 'card2',
