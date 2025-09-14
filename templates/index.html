@@ -313,8 +313,8 @@
     <!-- Take Action Button -->
     <div class="container mt-md-0 mt-sm-5 mb-5">
         <div class="row">
-            <div class="col-12 text-center">
-                <a href="#" onclick="takeAction()"><h3><i class="fas fa-rocket me-2"></i>Take Action!</h3></a>
+            <div class="col-8 text-center">
+                <a href="#" onclick="takeAction()"><h3>Take Action &gt;&gt;</h3></a>
             </div>
         </div>
     </div>
@@ -544,7 +544,7 @@
             actionPage.style.display = 'block';
             
             // Hide the Take Action button
-            const takeActionButton = document.querySelector('button[onclick="takeAction()"]');
+            const takeActionButton = document.querySelector('a[onclick="takeAction()"]');
             if (takeActionButton) {
                 takeActionButton.style.display = 'none';
             }
