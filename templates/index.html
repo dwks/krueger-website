@@ -51,7 +51,7 @@
 
     <div class="container mt-4">
         <div class="row">
-            <div class="col-8 text-center">
+            <div class="col-8 text-center" id="topTitle">
                 <h1 class="display-4 fw-bold text-primary mb-4">8 Facts About AI</h1>
             </div>
             <div class="col-4 text-center d-none d-lg-block">
@@ -113,7 +113,7 @@
 
                 <!-- Desktop Column 3 - Detail Display -->
                 <div class="col-md-4 mb-4 d-none d-lg-block">
-                    <div class="card h-100">
+                    <div class="card h-100 border-3">
                         <img src="static/img/yoshua2.jpg" class="card-img-top" alt="...">
                         <div class="card-body d-flex">
                             <div class="text-muted" id="detailed-content">
@@ -216,11 +216,26 @@
                 collapseAllMobileCards();
                 // Add h-25 class to all cards for desktop
                 addCardHeightClass();
+                // Set title to col-8 for desktop
+                setTitleColumnClass('col-8');
             } else {
                 // If switching to mobile, clear card selection
                 clearCardSelection();
                 // Remove h-25 class from all cards for mobile
                 removeCardHeightClass();
+                // Set title to col-12 for mobile
+                setTitleColumnClass('col-12');
+            }
+        }
+
+        // Set title column class dynamically
+        function setTitleColumnClass(className) {
+            const titleElement = document.getElementById('topTitle');
+            if (titleElement) {
+                // Remove existing column classes
+                titleElement.classList.remove('col-8', 'col-12');
+                // Add new column class
+                titleElement.classList.add(className);
             }
         }
 
@@ -276,9 +291,13 @@
                 highlightSelectedCard('card1');
                 // Add h-25 class for desktop
                 addCardHeightClass();
+                // Set title to col-8 for desktop
+                setTitleColumnClass('col-8');
             } else {
                 // Remove h-25 class for mobile
                 removeCardHeightClass();
+                // Set title to col-12 for mobile
+                setTitleColumnClass('col-12');
             }
             
             // Add any other initialization code here
