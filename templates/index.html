@@ -53,6 +53,12 @@
         .embed-responsive-16by9::before {
             padding-top: 56.25%;
         }
+        
+        /* Smaller text for detailed content */
+        #detailed-content {
+            font-size: 0.875rem; /* 14px - smaller than default 16px */
+            line-height: 1.4;
+        }
     </style>
     <!-- Google Fonts - Cormorant -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -150,7 +156,6 @@
                 <!-- Desktop Column 3 - Detail Display -->
                 <div class="col-md-4 mb-4 d-none d-lg-block">
                     <div class="card h-100 border-3">
-                        <img src="static/img/yoshua2.jpg" class="card-img-top" alt="...">
                         <div class="card-body d-flex">
                             <div class="text-muted" id="detailed-content">
                                 {{ ai_facts[0].content | safe }}

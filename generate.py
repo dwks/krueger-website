@@ -16,7 +16,7 @@ ai_facts = [
         'content': """
 <p>In 2023, over 500 AI scientists signed this statement:</p>
 
-<h4 style="font-family: Cormorant, sans-serif;">"Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war."</h4>
+<h5 style="font-family: Cormorant, sans-serif;">"Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war."</h5>
 
 <p>These include Yoshua Bengio and Nobel Prize winner Geoffrey Hinton, the two most highly-cited scientists of all time, who pioneered the techniques underlying all of today’s AI systems.  Hinton quit his job at Google in 2023 to warn the public about the dangers of AI.</p>
 
