@@ -195,32 +195,33 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="text-center mb-5">
-                        <h1 class="display-4 fw-bold text-primary mb-4">We're starting a movement to stop the AI takeover.</h1>
+                        <h5 class="display-5 fw-bold text-primary mb-4">We're starting a movement to stop the AI takeover.</h5>
                         <!--<p class="lead">Now that you understand the risks, here's how you can help create a safer AI future.</p>-->
                     </div>
                     
                     <div class="row g-4">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NX2YROCIJNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+
                         <!-- Action Card 1 -->
                         <div class="col-md-12">
-                            <div class="card h-100 border-3">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-share-alt text-primary mb-3" style="font-size: 3rem;"></i>
-                                    <h4 class="card-title">Share This Information</h4>
-                                    <p class="card-text">Help spread awareness about AI safety risks by sharing this page with friends, family, and colleagues.</p>
-                                    <button class="btn btn-outline-primary" onclick="shareOnTwitter()">
-                                        <i class="fab fa-twitter me-2"></i>Share on X
-                                    </button>
-                                </div>
+                            <div class="text-center">
+                                <p class="lead">AI is not inevitable. Our families, friends, and future are at stake.<br />
+                                Don't let tech companies take our future.<br />
+                                Help us fight back.</p>
                             </div>
                         </div>
                         
                         <!-- Action Card 5 - Mailing List -->
-                        <div class="col-md-12">
+                        <div class="col-md-8">
                             <div class="card h-100 border-3">
                                 <div class="card-body text-center">
-                                    <i class="fas fa-envelope text-primary mb-3" style="font-size: 3rem;"></i>
-                                    <h4 class="card-title">Stay Updated</h4>
-                                    <p class="card-text">Subscribe to our mailing list for the latest AI safety news, research updates, and action opportunities.</p>
+                                    <p class="card-text lead">Subscribe to our mailing list to join our movement:</p>
                                     <div class="d-flex justify-content-center mb-3">
                                         <div class="input-group" style="max-width: 400px;">
                                             <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" aria-label="Email address">
@@ -233,6 +234,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-4 d-flex align-items-center" style="min-height: 100%;">
+                            <div class="card h-100 border-3 w-100">
+                                <div class="card-body text-center d-flex align-items-center justify-content-center" style="height: 100%;">
+                                    <p class="card-text m-0" id="showPage3Text">Or, <a href="#showPage3Text" onclick="showPage3()">take action now!</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
                     </div>
                     
                     <!-- Back to Facts Button -->
