@@ -64,14 +64,14 @@
         @media (min-width: 1400px) {
             /* Very wide screens - compact */
             .card[onclick*="handleCardClick"] {
-                height: 8em !important;
+                height: 7em !important;
             }
         }
         
         @media (min-width: 992px) and (max-width: 1399.98px) {
             /* Large screens - medium height */
             .card[onclick*="handleCardClick"] {
-                height: 10em !important;
+                height: 8em !important;
             }
         }
         
@@ -147,7 +147,7 @@
                     {% for fact in ai_facts[:4] %}
                     <div class="card mb-3 border-3" onclick="handleCardClick('{{ fact.id }}')" style="cursor: pointer;">
                         <div class="card-body">
-                            <h5 class="card-title">{{ fact.title }}</h5>
+                            <h6 class="card-title">{{ fact.title }}</h6>
                             <div id="{{ fact.id }}-content" class="card-text" style="display: none; cursor: default;" onclick="event.stopPropagation();">
                                 {{ fact.content | safe }}
                             </div>
@@ -164,7 +164,7 @@
                     {% for fact in ai_facts[4:8] %}
                     <div class="card mb-3 border-3" onclick="handleCardClick('{{ fact.id }}')" style="cursor: pointer;">
                         <div class="card-body">
-                            <h5 class="card-title">{{ fact.title }}</h5>
+                            <h6 class="card-title">{{ fact.title }}</h6>
                             <div id="{{ fact.id }}-content" class="card-text" style="display: none; cursor: default;" onclick="event.stopPropagation();">
                                 {{ fact.content | safe }}
                             </div>
