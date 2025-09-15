@@ -189,8 +189,8 @@
         </div>
     </div>
 
-    <!-- Take Action Page (hidden initially) -->
-    <div id="actionPage" class="container-fluid bg-light py-5" style="display: none; min-height: 100vh;">
+    <!-- Do Something Page (hidden initially) -->
+    <div id="doSomethingPage" class="container-fluid bg-light py-5" style="display: none; min-height: 100vh;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -237,19 +237,53 @@
                         <div class="col-md-4 d-flex align-items-center" style="min-height: 100%;">
                             <div class="card h-100 border-3 w-100">
                                 <div class="card-body text-center d-flex align-items-center justify-content-center" style="height: 100%;">
-                                    <p class="card-text m-0" id="showPage3Text">Or, <a href="#showPage3Text" onclick="showPage3()">take action now!</a></p>
+                                    <p class="card-text m-0" id="takeActionText">Or, <a href="#takeActionText" onclick="takeAction()">take action now!</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-2"></div>
                     </div>
-                    
-                    <!-- Back to Facts Button -->
-                    <!--<div class="text-center mt-5">
-                        <button class="btn btn-secondary btn-lg px-4 py-2" onclick="backToFacts()">
-                            <i class="fas fa-arrow-left me-2"></i>Back to Facts
-                        </button>
-                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Take Action Page (hidden initially) -->
+    <div id="actionPage" class="container-fluid bg-light py-5" style="display: none; min-height: 50vh;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row g-4">
+                        <!-- Action Card 1 -->
+                        <div class="col-md-12">
+                            <div>
+                                <p class="lead">You can also take action now!  Follow these 3 steps to help:</p>
+                                <p class="lead">
+                                    <span style="display: inline-block; margin-left: 4em;">
+                                        (1) Tell your friends -- show someone this website.
+                                        <br />
+                                        <span style="display: inline-block; margin-left: 2em;">Or share this on social media.</span>
+                                    </span>
+                                </p>
+                                <p class="lead">
+                                    <span style="display: inline-block; margin-left: 8em;">
+                                        (2) Call or write to your representative.
+                                        <br />
+                                        <span style="display: inline-block; margin-left: 2em;">LINK/INSTRUCTIONS FOR THAT</span>
+                                    </span>
+                                    <br />
+                                </p>
+                                <p class="lead">
+                                    <span style="display: inline-block; margin-left: 14em;">
+                                        (3) Apply to be a volunteer.
+                                        <br />
+                                        <span style="display: inline-block; margin-left: 2em;">LINK/INSTRUCTIONS FOR THAT</span>
+                                    </span>
+                                    <br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -281,7 +315,7 @@
     <div class="container mt-md-0 mt-sm-5 mb-5">
         <div class="row">
             <div class="col-8 text-center">
-                <a href="#" class="fw-bold" onclick="takeAction()"><h1>Do Something About It &raquo;</h1></a>
+                <a href="#doSomethingPage" class="fw-bold" onclick="doSomething()"><h1>Do Something About It &raquo;</h1></a>
             </div>
         </div>
     </div>
@@ -504,41 +538,36 @@
             }, 2000);
         }
 
+        // Do Something function - shows Do Something page and scrolls to it
+        function doSomething() {
+            console.log("doing something")
+            // Show the Do Something page
+            const doSomethingPage = document.getElementById('doSomethingPage');
+            doSomethingPage.style.display = 'block';
+            
+            // Hide the Do Something button
+            const doSomethingButton = document.querySelector('a[onclick="doSomething()"]');
+            if (doSomethingButton) {
+                doSomethingButton.style.display = 'none';
+            }
+            
+            // Smooth scroll to the Do Something page
+            doSomethingPage.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
         // Take Action function - shows action page and scrolls to it
         function takeAction() {
             // Show the action page
             const actionPage = document.getElementById('actionPage');
             actionPage.style.display = 'block';
             
-            // Hide the Take Action button
-            const takeActionButton = document.querySelector('a[onclick="takeAction()"]');
-            if (takeActionButton) {
-                takeActionButton.style.display = 'none';
-            }
-            
             // Smooth scroll to the action page
             actionPage.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
-            });
-        }
-        
-        // Back to Facts function - hides action page and scrolls to top
-        function backToFacts() {
-            // Hide the action page
-            const actionPage = document.getElementById('actionPage');
-            actionPage.style.display = 'none';
-            
-            // Show the Take Action button again
-            const takeActionButton = document.querySelector('button[onclick="takeAction()"]');
-            if (takeActionButton) {
-                takeActionButton.style.display = 'inline-block';
-            }
-            
-            // Smooth scroll to top of the page
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
             });
         }
 
