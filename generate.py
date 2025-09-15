@@ -12,6 +12,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 mailing_list = {
     'form_url': os.getenv('MAILCHIMP_FORM_URL', '')
 }
+print(mailing_list)
 
 # Data for the AI facts
 ai_facts = [

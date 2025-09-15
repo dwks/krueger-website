@@ -269,7 +269,7 @@
                                     <span style="display: inline-block; margin-left: 8em;">
                                         (2) Call or write to your representative.
                                         <br />
-                                        <span style="display: inline-block; margin-left: 2em;">LINK/INSTRUCTIONS FOR THAT</span>
+                                        <span style="display: inline-block; margin-left: 2em;">ControlAI has a <a href="https://controlai.com/take-action/world">template</a> and a tool for this.</span>
                                     </span>
                                     <br />
                                 </p>
@@ -644,6 +644,11 @@
             setTimeout(() => {
                 messageDiv.innerHTML = '';
             }, 5000);
+
+            // Show third page
+            setTimeout(() => {
+                takeAction();
+            }, 1000);
         }
         
         // Allow Enter key to submit email
