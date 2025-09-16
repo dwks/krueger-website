@@ -89,11 +89,18 @@
         
         /* Action button positioning */
         .action-button-row {
-            position: absolute;
-            top: calc(4 * 8em + 3 * 1rem + 1rem);
-            left: 0;
-            right: 0;
-            z-index: 10;
+            margin-top: 1rem;
+        }
+        
+        @media (min-width: 992px) {
+            .action-button-row {
+                position: absolute;
+                top: calc(4 * 8em + 3 * 1rem + 1rem);
+                left: 0;
+                right: 0;
+                z-index: 10;
+                margin-top: 0;
+            }
         }
         
         @media (min-width: 1400px) {
@@ -213,12 +220,12 @@
                      </div>
                  </div>
              </div>
-             
-             <!-- Take Action Button - positioned under the 8 cards, left of detail column -->
-             <div class="row d-none d-lg-block action-button-row">
-                 <div class="col-lg-8 text-center">
-                     <a href="#doSomethingPage" onclick="doSomething()"><h1 class="display-4 fw-bold">DO SOMETHING</h1></a>
-                 </div>
+         </div>
+         
+         <!-- Take Action Button - responsive positioning -->
+         <div class="row action-button-row">
+             <div class="col-12 col-lg-8 text-center">
+                 <a href="#doSomethingPage" onclick="doSomething()"><h1 class="display-4 fw-bold">DO SOMETHING</h1></a>
              </div>
          </div>
      </div>
@@ -346,7 +353,7 @@
 
     <div class="container mt-3 d-lg-none">
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center mb-4">
                 <div class="d-flex justify-content-center gap-3 align-items-center">
                     <a href="#" onclick="shareOnTwitter()">
                         <img src="static/img/x.png" alt="Share on X" width="32" height="32" style="cursor: pointer;">
