@@ -19,7 +19,9 @@ ai_facts = [
     {
         'id': 'card1',
         #'title': 'Hundreds of AI leaders, including Nobel Prize-winning scientists, agreed that AI could lead to human extinction.',
-        'title': 'Experts are concerned about the risks of racing to advance AI; even AI skeptics voice concerns about risks of the AI race itself.',
+        #'title': 'Hundreds of top AI experts say that AI could lead to human extinction.',
+        'title': '1) Top AI researchers believe advanced AI poses a serious risk of human extinction.', 
+        #'title': 'On average, AI researchers believe AI poses a 15% chance of human extinction or similar',         
         'content': """
 <p>In 2023, over 500 AI scientists signed this <a target="_blank" href="https://safe.ai/work/statement-on-ai-risk">statement</a>:</p>
 
@@ -38,10 +40,14 @@ ai_facts = [
     },
     {
         'id': 'card2',
-        'title': 'Researchers still don\'t understand how AI systems work, even after decades of work and thousands of papers.',
+        #'title': 'Researchers still mostly don\'t understand how AI systems work, even after more than a decade of work and thousands of papers.',
+        'title': '2) AI researchers understand how to \"grow\" AI systems, but not how they work.',
         'content': """
 <p class="lead">AI is a "black box."</p>
 <p>AIs often display very weird and surprising behavior.  And the researchers developing an AI typically don’t understand why.</p>
+
+<p><img src="static/img/sydney.png" alt="sydney" class="img-fluid" /></p>
+
 
 <p>How is this possible?  AI is not programmed by hand. It is "grown" through a process resembling trial and error. The "code" for an AI isn’t the kind of instructions used in typical computer programs. It’s  basically ~1,000,000,000,000 numbers that start out random and are gradually tweaked to nudge the AI towards behaving the way the designers intend in various "training" scenarios.</p>
 
@@ -54,8 +60,29 @@ In the meanwhile, “techniques for explaining why a general-purpose AI model pr
 """
     },
     {
+        'id': 'card6',
+        'title': '3) In tests, AIs act to mislead people and thwart human control.',
+        #'title': 'AI systems attempt to deceive and manipulate humans without being specifically trained to do this',
+        'content': 'This is known as the alignment problem - ensuring AI goals match human intentions.'
+    },
+    {
+        'id': 'card5',
+        'title': '4) Autonomous killer drones are already being deployed in conflicts such as the Ukraine war.',
+        #'title': '4) Drones are killing people autonomously in Ukraine.',
+        #'title': '4) Autonomous killer drones are used in wars.',        
+        'content': 'The capabilities gap is widening between what AI can do and what we can safely control.'
+    },
+    {
         'id': 'card3',
-        'title': 'AI investment, development, and deployment are outpacing not just regulation, but measurement, mitigation, and even understanding.',
+        #'title': 'AIs trained using 1,000,000,000x more computer power than in 2012 can do vastly more',
+		#'title': 'AI is trained using 1,000,000,000x more computer power than it was in 2012 and can do vastly more',
+        #'title': '3) Since 2012, AI systems are trained using 1,000,000,000 times more computer power and are much better',
+        #'title': '3) Since 2012, AI got vastly better from being trained using 1,000,000,000 times more computer power',
+        #'title': 'Since 2012, training an AI uses 1,000,000,000x more computer hardware and produces ',
+        #'title':'3) The amount of computer power used to train AIs is 1,000,000,000 times larger than it was in 2012.',
+        #'title':'3) The amount of computer power used to train a big AI is 1,000,000,000 times larger than it was in 2012, driving rapid progress and record valuations.',
+        'title': '5) AI computing power, investment, and capabilities are all scaling rapidly.',
+        #'title':'5) The amount of computer power used to train a large AI is 1,000,000,000 times higher since 2012, driving rapid progress and record valuations.',
         'content': """
 <p class="lead">AI is advancing surprisingly fast.</p>
 
@@ -70,24 +97,16 @@ In the meanwhile, “techniques for explaining why a general-purpose AI model pr
 """
     },
     {
-        'id': 'card4',
-        'title': 'AI companies have repeatedly reneged on their own safety commitments.',
-        'content': 'Existing safety techniques like RLHF may not scale to superintelligent AI systems.'
-    },
-    {
-        'id': 'card5',
-        'title': 'AI researchers have admitted being surprised at how fast recent AI progress has been.',
-        'content': 'The capabilities gap is widening between what AI can do and what we can safely control.'
-    },
-    {
-        'id': 'card6',
-        'title': 'AI systems can learn to pursue unintended goals that conflict with human values.',
-        'content': 'This is known as the alignment problem - ensuring AI goals match human intentions.'
-    },
-    {
         'id': 'card7',
-        #'title': 'AI companies want to build “superintelligent” AIs smart enough to take over the world, while admitting they don’t know how to control them.',
-        'title': 'AI companies are trying to build AI smarter than people, despite not knowing how to control AI even at today’s levels.',
+        #'title': 'AI companies want to build “superintelligent” AIs smart enough to take over the world, while admitting they don’t know how to control them.', 
+        #AI companies are trying to build AI smarter than people, despite not knowing how to control AI even at today’s levels.
+        #'title': '6) AI companies racing to build ‘superintelligent’ AIs far surpassing human capacities admit they have no plan to control these.',
+        #'title': '6) AI companies are dashing to build ‘superintelligent’ AIs far surpassing human capacities, while admitting that how to prevent catastrophe from these is an open question.',
+        #'title': '6) AI companies dashing to build ‘superintelligent’ AIs far surpassing human capacities admit that preventing catastrophe from these is an open question.',
+        #'title': '6) AI companies are building ‘superintelligent’ AIs far surpassing human capacities admit that preventing catastrophe from these is an open question.',
+        #'title': '6) AI companies want to build ‘superintelligent’ AIs more competent than any human, while admitting they don’t know how to control them.',
+        #'title': 'AI companies want to build \'superintelligent\' AIs they admit they don\'t know how to control',
+        'title': '6) AI companies want to build \"superintelligent\" AIs, while admitting they don\'t know how to control them.',
         'content': """
 <p class="lead">AI labs plan to build "superintelligence" with no ability to control it.</p>
 
@@ -106,7 +125,8 @@ In the meanwhile, “techniques for explaining why a general-purpose AI model pr
     },
     {
         'id': 'card8',
-        'title': 'AI is already displacing workers.  Further advances could cause record unemployment.',
+        'title': '7) AI is already displacing workers.  Further advances could cause record unemployment.',
+        #'title': 'Human-level AI could cause record unemployment',
         'content': """
 <p>According to the <a target="_blank" href="https://www.gov.uk/government/publications/international-ai-safety-report-2025/international-ai-safety-report-2025#systemic-risks:~:text=In%20potential%20future%20scenarios%20with%20general%2Dpurpose%20AI%20that%20outperforms%20humans%20on%20many%20complex%20tasks%2C%20the%20labour%20market%20impacts%20would%20likely%20be%20profound.">International AI Safety Report</a>, “with general-purpose AI that outperforms humans on many complex tasks, the labour market impacts would likely be profound”.  Researchers found entry-level jobs are already affected in sectors such as customer service, accounting, software development, and administration.</p>
 
@@ -117,7 +137,14 @@ In the meanwhile, “techniques for explaining why a general-purpose AI model pr
 <p><img src="static/img/dario.png" alt="Dario Amodei" class="img-fluid" /></p>
 
 """
-    }
+    },
+    {
+        'id': 'card4',
+        'title': '8) US law does not require companies to test AIs before releasing them.',
+        #'title': '8) US law does not require any testing of AIs.',
+        #'title': '8) Safety from societal scale AI risk is governed by voluntary commitments, which companies frequently renege upon.',
+        'content': 'Existing safety techniques like RLHF may not scale to superintelligent AI systems.'
+    },
 ]
 
 # Desktop-specific content
