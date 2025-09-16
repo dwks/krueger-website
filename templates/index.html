@@ -603,12 +603,6 @@
             const doSomethingPage = document.getElementById('doSomethingPage');
             doSomethingPage.style.display = 'block';
             
-            // Hide the Do Something button
-            const doSomethingButton = document.querySelector('a[onclick="doSomething()"]');
-            if (doSomethingButton) {
-                doSomethingButton.style.display = 'none';
-            }
-            
             // Smooth scroll to the Do Something page
             doSomethingPage.scrollIntoView({
                 behavior: 'smooth',
