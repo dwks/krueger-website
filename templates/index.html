@@ -60,6 +60,33 @@
             line-height: 1.4;
         }
 
+        /* Card animations and transitions */
+        .card[onclick*="handleCardClick"] {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .card[onclick*="handleCardClick"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .card[onclick*="handleCardClick"].bg-primary {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        #detailed-content {
+            transition: opacity 0.4s ease-in-out;
+        }
+        
+        .fade-in {
+            opacity: 1;
+        }
+        
+        .fade-out {
+            opacity: 0;
+        }
+
         /* Responsive card heights */
         @media (min-width: 1400px) {
             /* Very wide screens - compact */
@@ -446,14 +473,22 @@
             }
         }
 
-        function useContent(cardId) {
-            const content = document.getElementById(cardId + '-content');
-            const detailedContent = document.getElementById('detailed-content');
-            
-            if (content && detailedContent) {
-                detailedContent.innerHTML = content.innerHTML;
-            }
-        }
+         function useContent(cardId) {
+             const content = document.getElementById(cardId + '-content');
+             const detailedContent = document.getElementById('detailed-content');
+             
+             if (content && detailedContent) {
+                 // Add fade out effect
+                 detailedContent.classList.add('fade-out');
+                 
+                 // Wait for fade out to complete, then update content and fade in
+                 setTimeout(() => {
+                     detailedContent.innerHTML = content.innerHTML;
+                     detailedContent.classList.remove('fade-out');
+                     detailedContent.classList.add('fade-in');
+                 }, 200); // Half of the 0.4s transition duration
+             }
+         }
 
         // Social Media Sharing Functions
         function shareOnTwitter() {
