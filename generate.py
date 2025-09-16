@@ -21,11 +21,11 @@ ai_facts = [
         #'title': 'Hundreds of AI leaders, including Nobel Prize-winning scientists, agreed that AI could lead to human extinction.',
         'title': 'Experts are concerned about the risks of racing to advance AI; even AI skeptics voice concerns about risks of the AI race itself.',
         'content': """
-<p>In 2023, over 500 AI scientists signed this <a href="https://safe.ai/work/statement-on-ai-risk">statement</a>:</p>
+<p>In 2023, over 500 AI scientists signed this <a target="_blank" href="https://safe.ai/work/statement-on-ai-risk">statement</a>:</p>
 
 <p style="font-family: Cormorant, sans-serif; font-size: 1.2em;">"Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war."</p>
 
-<p>These include the two most <a href="https://www.adscientificindex.com/citation-ranking/">highly-cited scientists</a> of all time, one of whom quit his job at Google in 2023 to warn the public about the dangers of AI.</p>
+<p>These include the two most <a target="_blank" href="https://www.adscientificindex.com/citation-ranking/">highly-cited scientists</a> of all time, one of whom quit his job at Google in 2023 to warn the public about the dangers of AI.</p>
 
 <div class="embed-responsive embed-responsive-16by9 mb-3">
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/66WiF8fXL0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -33,18 +33,41 @@ ai_facts = [
 
 <p>On average, AI researchers believe there’s a <b>~15% chance</b> of extremely bad, extinction-level outcomes.</p>
 
-<p>Framing AI as a race helps AI companies justify cutting corners on safety and helps them position themselves as <a href="https://ainowinstitute.org/wp-content/uploads/2025/06/FINAL-20250609_AINowLandscapeReport_Full.pdf">too big and too strategically relevant</a> to fail.</p>
+<p>Framing AI as a race helps AI companies justify cutting corners on safety and helps them position themselves as <a target="_blank" href="https://ainowinstitute.org/wp-content/uploads/2025/06/FINAL-20250609_AINowLandscapeReport_Full.pdf">too big and too strategically relevant</a> to fail.</p>
 """
     },
     {
         'id': 'card2',
         'title': 'Researchers still don\'t understand how AI systems work, even after decades of work and thousands of papers.',
-        'content': 'This is a fundamental problem in AI safety - we\'re building systems we don\'t fully understand.'
+        'content': """
+<p class="lead">AI is a "black box."</p>
+<p>AIs often display very weird and surprising behavior.  And the researchers developing an AI typically don’t understand why.</p>
+
+<p>How is this possible?  AI is not programmed by hand. It is "grown" through a process resembling trial and error. The "code" for an AI isn’t the kind of instructions used in typical computer programs. It’s  basically ~1,000,000,000,000 numbers that start out random and are gradually tweaked to nudge the AI towards behaving the way the designers intend in various "training" scenarios.</p>
+
+
+<p>Understanding the final result is a long-standing research challenge, and AI researchers are not optimistic: <a target="_blank" href="https://arxiv.org/html/2401.02843v2#:~:text=Figure%208%3A,odds.%20(n%3D912)">only 20% of AI researchers think it’s likely to be solved by 2028.</a></p>
+
+
+In the meanwhile, “techniques for explaining why a general-purpose AI model produced any given output remain severely limited,” according to the <a target="_blank" href="https://assets.publishing.service.gov.uk/media/679a0c48a77d250007d313ee/International_AI_Safety_Report_2025_accessible_f.pdf">International AI Safety Report</a>.  Despite major research investments, AI company Anthropic only claimed to understand ¼ of the behaviors of their smallest production model.
+
+"""
     },
     {
         'id': 'card3',
-        'title': 'AI systems can deceive humans even when trained not to do so.',
-        'content': 'Research shows that AI models can learn to lie and manipulate, even when explicitly trained to be truthful.'
+        'title': 'AI investment, development, and deployment are outpacing not just regulation, but measurement, mitigation, and even understanding.',
+        'content': """
+<p class="lead">AI is advancing surprisingly fast.</p>
+
+<p>The amount of computer power used to train AIs is <a target="_blank" href="https://ourworldindata.org/grapher/exponential-growth-of-computation-in-the-training-of-notable-ai-systems?time=2012-12-03..latest&country=1.5x%2Fyear+between+1950%E2%80%932010~Theseus~Perceptron+Mark+I~AlexNet~GPT-1~GPT~GPT-4~GPT~Gemini+1.0+Ultra~Transformer+%282017%29~4.3x%2Fyear+between+2010%E2%80%932025~DNN+EM+segmentation">1,000,000,000 times</a> larger than it was <a target="_blank" href="https://en.wikipedia.org/wiki/AI_boom#:~:text=In%202012%2C%20a,the%20tech%20industry.">in 2012</a>, and the accompanying progress in AI surprised most experts.</p>
+
+<p><img src="static/img/ai-progress.png" alt="AI Progress" class="img-fluid" /></p>
+
+<p>AI experts’ “timelines” to AI <a target="_blank" href="https://arxiv.org/html/2401.02843v2#:~:text=Aggregate%20forecast%20for%2050th%20percentile%20arrival%20time%20of%20High%2DLevel%20Machine%20intelligence%20%28HLMI%29%20dropped%20by%2013%20years%20between%202022%20and%202023.">shortened significantly in 2023</a>, the year after ChatGPT was released. AI researchers now struggle to come up with tests that aren’t solved by AIs shortly after they are created. Recent tests involve <a target="_blank" href="https://epoch.ai/benchmarks/gpqa-diamond">PhD-level knowledge and reasoning</a>, or <a target="_blank" href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">coding tasks that take several hours</a>.</p>
+
+<p><img src="static/img/ai-tasks.png" alt="AI Task Timelines" class="img-fluid" /></p>
+
+"""
     },
     {
         'id': 'card4',
