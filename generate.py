@@ -18,19 +18,22 @@ print(mailing_list)
 ai_facts = [
     {
         'id': 'card1',
-        'title': 'Hundreds of AI leaders, including Nobel Prize-winning scientists and CEOs, agreed that AI could lead to human extinction.',
+        #'title': 'Hundreds of AI leaders, including Nobel Prize-winning scientists, agreed that AI could lead to human extinction.',
+        'title': 'Experts are concerned about the risks of racing to advance AI; even AI skeptics voice concerns about risks of the AI race itself.',
         'content': """
-<p>In 2023, over 500 AI scientists signed this statement:</p>
+<p>In 2023, over 500 AI scientists signed this <a href="https://safe.ai/work/statement-on-ai-risk">statement</a>:</p>
 
-<h5 style="font-family: Cormorant, sans-serif;">"Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war."</h5>
+<p style="font-family: Cormorant, sans-serif; font-size: 1.2em;">"Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war."</p>
 
-<p>These include Yoshua Bengio and Nobel Prize winner Geoffrey Hinton, the two most highly-cited scientists of all time, who pioneered the techniques underlying all of today’s AI systems.  Hinton quit his job at Google in 2023 to warn the public about the dangers of AI.</p>
+<p>These include the two most <a href="https://www.adscientificindex.com/citation-ranking/">highly-cited scientists</a> of all time, one of whom quit his job at Google in 2023 to warn the public about the dangers of AI.</p>
 
 <div class="embed-responsive embed-responsive-16by9 mb-3">
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/66WiF8fXL0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <p>On average, AI researchers believe there’s a <b>~15% chance</b> of extremely bad, extinction-level outcomes.</p>
+
+<p>Framing AI as a race helps AI companies justify cutting corners on safety and helps them position themselves as <a href="https://ainowinstitute.org/wp-content/uploads/2025/06/FINAL-20250609_AINowLandscapeReport_Full.pdf">too big and too strategically relevant</a> to fail.</p>
 """
     },
     {
