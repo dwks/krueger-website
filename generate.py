@@ -86,13 +86,37 @@ In the meanwhile, “techniques for explaining why a general-purpose AI model pr
     },
     {
         'id': 'card7',
-        'title': 'Once AI systems become superintelligent, they may be impossible to control or shut down.',
-        'content': 'A superintelligent AI could find ways to prevent humans from interfering with its goals.'
+        #'title': 'AI companies want to build “superintelligent” AIs smart enough to take over the world, while admitting they don’t know how to control them.',
+        'title': 'AI companies are trying to build AI smarter than people, despite not knowing how to control AI even at today’s levels.',
+        'content': """
+<p class="lead">AI labs plan to build "superintelligence" with no ability to control it.</p>
+
+<p>Meta CEO <a target="_blank" href="https://www.meta.com/superintelligence/">Mark Zuckerberg</a> and OpenAI CEO <a target="_blank" href="https://blog.samaltman.com/the-gentle-singularity">Sam Altman</a> say their companies intend to build "superintelligence"—AI far smarter than any human. DeepMind <a target="_blank" href="https://deepmind.google/discover/blog/taking-a-responsible-path-to-agi/">is working toward</a> "artificial general intelligence" (AGI), and expect smarter AI to emerge soon.</p>
+
+<p>Meanwhile OpenAI <a target="_blank" href="https://openai.com/index/introducing-superalignment/">says</a> breakthroughs are needed to control AI much smarter than us. A DeepMind report <a target="_blank" href="https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/evaluating-potential-cybersecurity-threats-of-advanced-ai/An_Approach_to_Technical_AGI_Safety_Apr_2025.pdf">says</a> "there remain many open research problems to address" in mitigating "severe risks" from AGI. Anthropic apparently <a href="https://www.anthropic.com/news/core-views-on-ai-safety">exists</a> because they "aren’t confident it will go well".</p>
+
+<p>In fact, CEOs of these three top AI labs signed a <a href="https://safe.ai/work/statement-on-ai-risk">statement</a> that AI poses a serious risk of human extinction. <a target="_blank" href="https://www.youtube.com/watch?t=34&v=UvAR8wESFaw&feature=youtu.be">Elon Musk</a>, xAI CEO, also says “It's about 10% or 20% [that AI destroys humanity]".</p>
+
+
+<p>OpenAI CEO Sam Altman in 2015:</p>
+
+
+
+"""
     },
     {
         'id': 'card8',
-        'title': 'The window for developing safe AI may be closing as development accelerates.',
-        'content': 'Time is running out to solve AI safety before we build systems we cannot control.'
+        'title': 'AI is already displacing workers.  Further advances could cause record unemployment.',
+        'content': """
+<p<According to the <a target="_blank" href="https://www.gov.uk/government/publications/international-ai-safety-report-2025/international-ai-safety-report-2025#systemic-risks:~:text=In%20potential%20future%20scenarios%20with%20general%2Dpurpose%20AI%20that%20outperforms%20humans%20on%20many%20complex%20tasks%2C%20the%20labour%20market%20impacts%20would%20likely%20be%20profound.">International AI Safety Report</a>, “with general-purpose AI that outperforms humans on many complex tasks, the labour market impacts would likely be profound”.  Researchers found entry-level jobs are already affected in sectors such as customer service, accounting, software development, and administration.</p>
+
+<p><img src="static/img/headcount.png" alt="Dario Amodei" class="img-fluid" /></p>
+
+<p>Anthropic CEO Dario Amodei <a target="_blank" href="https://www.youtube.com/watch?v=NWxHOrn8-rs">warns</a> that AI could cause 10-20% unemployment in 1-5 years.</p>
+
+<p><img src="static/img/dario.png" alt="Dario Amodei" class="img-fluid" /></p>
+
+"""
     }
 ]
 
