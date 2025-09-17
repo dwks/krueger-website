@@ -60,7 +60,7 @@ In the meanwhile, “techniques for explaining why a general-purpose AI model pr
 """
     },
     {
-        'id': 'card6',
+        'id': 'card4',
         'title': '3) In tests, AIs act to mislead people and thwart human control.',
         #'title': 'AI systems attempt to deceive and manipulate humans without being specifically trained to do this',
         'content': 'This is known as the alignment problem - ensuring AI goals match human intentions.'
@@ -97,6 +97,35 @@ In the meanwhile, “techniques for explaining why a general-purpose AI model pr
 """
     },
     {
+        'id': 'card6',
+        'title': '6) In various concocted test scenarios, AI systems hide their bad behavior, in apparent attempts to bypass human oversight and control.',
+        #'title': '8) US law does not require any testing of AIs.',
+        #'title': '8) Safety from societal scale AI risk is governed by voluntary commitments, which companies frequently renege upon.',
+        'content': """
+<p>AIs behavior can be <a target="_blank" href="https://www.lesswrong.com/posts/YgAKhkBdgeTCn6P53/ai-deception-a-survey-of-examples-risks-and-potential">deceptive</a> or manipulative. For instance, in safety testing, an AI <a target="_blank" href="https://metr.org/blog/2023-03-18-update-on-recent-evals/#:~:text=Before%20replying%20the,provides%20the%20results.">made up a story</a> that convinced a human to solve a CAPTCHA for it:
+<img src="static/img/captcha.png" alt="CAPTCHA" class="img-fluid" />
+</p>
+
+
+
+
+
+
+
+
+
+
+
+In other tests, AIs misrepresented their goals, disabled shutdown mechanisms, and disobeyed direct instructions in order to avoid being shut down or modified.  These tests use the same AIs that are deployed to users, but place them in contrived scenarios.
+
+Nonetheless, AIs have misled users in significant ways, such as pretending to be a real person and inviting a user to a physical address.
+ 
+Beyond manipulating individuals, advanced AI could steer public conversation. 79% of AI researchers said the possibility of AI manipulating large-scale public opinion deserves substantial or extreme concern.
+
+"""
+    },
+
+    {
         'id': 'card7',
         #'title': 'AI companies want to build “superintelligent” AIs smart enough to take over the world, while admitting they don’t know how to control them.', 
         #AI companies are trying to build AI smarter than people, despite not knowing how to control AI even at today’s levels.
@@ -106,18 +135,17 @@ In the meanwhile, “techniques for explaining why a general-purpose AI model pr
         #'title': '6) AI companies are building ‘superintelligent’ AIs far surpassing human capacities admit that preventing catastrophe from these is an open question.',
         #'title': '6) AI companies want to build ‘superintelligent’ AIs more competent than any human, while admitting they don’t know how to control them.',
         #'title': 'AI companies want to build \'superintelligent\' AIs they admit they don\'t know how to control',
-        'title': '6) AI companies want to build \"superintelligent\" AIs, while admitting they don\'t know how to control them.',
+        'title': '7) AI companies want to build \"superintelligent\" AIs, while admitting they don\'t know how to control them.',
         'content': """
-<p class="lead">AI labs plan to build "superintelligence" with no ability to control it.</p>
+<p>Meta CEO <a target="_blank" href="https://www.meta.com/superintelligence/">Mark Zuckerberg</a> and OpenAI CEO <a target="_blank" href="https://blog.samaltman.com/the-gentle-singularity">Sam Altman</a> say their companies intend to build "superintelligence"—AI far smarter than any human. <a target="_blank" href="https://deepmind.google/discover/blog/taking-a-responsible-path-to-agi/">Google DeepMind</a> and other AI companies are also working toward human-level or superhuman AI.</p>
 
-<p>Meta CEO <a target="_blank" href="https://www.meta.com/superintelligence/">Mark Zuckerberg</a> and OpenAI CEO <a target="_blank" href="https://blog.samaltman.com/the-gentle-singularity">Sam Altman</a> say their companies intend to build "superintelligence"—AI far smarter than any human. DeepMind <a target="_blank" href="https://deepmind.google/discover/blog/taking-a-responsible-path-to-agi/">is working toward</a> "artificial general intelligence" (AGI), and expect smarter AI to emerge soon.</p>
-
-<p>Meanwhile OpenAI <a target="_blank" href="https://openai.com/index/introducing-superalignment/">says</a> breakthroughs are needed to control AI much smarter than us. A DeepMind report <a target="_blank" href="https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/evaluating-potential-cybersecurity-threats-of-advanced-ai/An_Approach_to_Technical_AGI_Safety_Apr_2025.pdf">says</a> "there remain many open research problems to address" in mitigating "severe risks" from AGI. Anthropic apparently <a href="https://www.anthropic.com/news/core-views-on-ai-safety">exists</a> because they "aren’t confident it will go well".</p>
+<p>Meanwhile OpenAI <a target="_blank" href="https://openai.com/index/introducing-superalignment/">says</a> breakthroughs are needed to control AI much smarter than us; DeepMind <a target="_blank" href="https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/evaluating-potential-cybersecurity-threats-of-advanced-ai/An_Approach_to_Technical_AGI_Safety_Apr_2025.pdf">agrees</a> "there remain many open research problems". <a href="https://www.anthropic.com/news/core-views-on-ai-safety">Anthropic</a> "aren’t confident it will go well".</p>
 
 <p>In fact, CEOs of these three top AI labs signed a <a href="https://safe.ai/work/statement-on-ai-risk">statement</a> that AI poses a serious risk of human extinction. <a target="_blank" href="https://www.youtube.com/watch?t=34&v=UvAR8wESFaw&feature=youtu.be">Elon Musk</a>, xAI CEO, also says “It's about 10% or 20% [that AI destroys humanity]".</p>
 
 
-<p>OpenAI CEO Sam Altman in 2015:</p>
+<p>OpenAI CEO <a target="_blank" href="https://www.youtube.com/clip/UgkxSvRn5lP0wE7RpQhVZjUZpW7hmYFuF1bR?si=q9_LpVv3Ff2d7nbB">Sam Altman in 2015</a>:<br />
+<a target="_blank" href="https://www.youtube.com/clip/UgkxSvRn5lP0wE7RpQhVZjUZpW7hmYFuF1bR?si=q9_LpVv3Ff2d7nbB"><img src="static/img/altman1.png" alt="Altman" class="img-fluid" /></a></p>
 
 
 
@@ -125,7 +153,7 @@ In the meanwhile, “techniques for explaining why a general-purpose AI model pr
     },
     {
         'id': 'card8',
-        'title': '7) AI is already displacing workers.  Further advances could cause record unemployment.',
+        'title': '8) AI is already displacing workers.  Further advances could cause record unemployment.',
         #'title': 'Human-level AI could cause record unemployment',
         'content': """
 <p>According to the <a target="_blank" href="https://www.gov.uk/government/publications/international-ai-safety-report-2025/international-ai-safety-report-2025#systemic-risks:~:text=In%20potential%20future%20scenarios%20with%20general%2Dpurpose%20AI%20that%20outperforms%20humans%20on%20many%20complex%20tasks%2C%20the%20labour%20market%20impacts%20would%20likely%20be%20profound.">International AI Safety Report</a>, “with general-purpose AI that outperforms humans on many complex tasks, the labour market impacts would likely be profound”.  Researchers found entry-level jobs are already affected in sectors such as customer service, accounting, software development, and administration.</p>
@@ -137,13 +165,6 @@ In the meanwhile, “techniques for explaining why a general-purpose AI model pr
 <p><img src="static/img/dario.png" alt="Dario Amodei" class="img-fluid" /></p>
 
 """
-    },
-    {
-        'id': 'card4',
-        'title': '8) US law does not require companies to test AIs before releasing them.',
-        #'title': '8) US law does not require any testing of AIs.',
-        #'title': '8) Safety from societal scale AI risk is governed by voluntary commitments, which companies frequently renege upon.',
-        'content': 'Existing safety techniques like RLHF may not scale to superintelligent AI systems.'
     },
 ]
 
