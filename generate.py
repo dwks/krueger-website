@@ -135,7 +135,7 @@ ai_facts = [
 <p>OpenAI CEO <a target="_blank" href="https://www.youtube.com/clip/UgkxSvRn5lP0wE7RpQhVZjUZpW7hmYFuF1bR?si=q9_LpVv3Ff2d7nbB">Sam Altman in 2015</a>:<br /></p>
 
 <div class="embed-responsive embed-responsive-16by9 mb-3">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d6lDZpvHAoo?si=hgnec_L68ljrPLnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d6lDZpvHAoo?si=0_jd6NE80BKycmZC&amp;start=523" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 """
@@ -153,7 +153,7 @@ ai_facts = [
 
 
 <div class="embed-responsive embed-responsive-16by9 mb-3">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d6lDZpvHAoo?si=0_jd6NE80BKycmZC&amp;start=523" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NWxHOrn8-rs?si=OImMU-q_8pczIOBz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 """
