@@ -33,7 +33,7 @@ ai_facts = [
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/66WiF8fXL0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-<p>On average, AI researchers believe there’s a <b>~15% chance</b> of extremely bad, extinction-level outcomes.</p>
+<p>On average, AI researchers believe there’s a <b>10-20% chance</b> of extremely bad, extinction-level outcomes.</p>
 
 <p>Framing AI as a race helps AI companies justify cutting corners on safety and helps them position themselves as <a target="_blank" href="https://ainowinstitute.org/wp-content/uploads/2025/06/FINAL-20250609_AINowLandscapeReport_Full.pdf">too big and too strategically relevant</a> to fail.</p>
 """
@@ -43,19 +43,15 @@ ai_facts = [
         #'title': 'Researchers still mostly don\'t understand how AI systems work, even after more than a decade of work and thousands of papers.',
         'title': '2) AI researchers understand how to \"grow\" AI systems, but not how they work.',
         'content': """
-<p class="lead">AI is a "black box."</p>
-<p>AIs often display very weird and surprising behavior.  And the researchers developing an AI typically don’t understand why.</p>
+<p>AIs often display weird and surprising behavior.   In 2023, Microsoft’s “Sydney” <a target="_blank" href="https://x.com/sethlazar/status/1626257535178280960">threatened</a> and <a target="_blank" href="https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html">tried to seduce users</a>:</p>
 
 <p><img src="static/img/sydney.png" alt="sydney" class="img-fluid" /></p>
 
+<p>Researchers making AIs often don’t understand why they behave in such ways.</p>
 
-<p>How is this possible?  AI is not programmed by hand. It is "grown" through a process resembling trial and error. The "code" for an AI isn’t the kind of instructions used in typical computer programs. It’s  basically ~1,000,000,000,000 numbers that start out random and are gradually tweaked to nudge the AI towards behaving the way the designers intend in various "training" scenarios.</p>
+<p>How is this possible?  AI is not programmed by hand. It is “grown” through a process resembling trial and error: 1,000,000,000,000 (or so) random numbers are <a target="_blank" href="https://playground.tensorflow.org/">repeatedly tweaked</a> to nudge the AI towards behaving as intended in various specific “training” scenarios -- with no guarantees on how they’ll behave in other contexts.</p>
 
-
-<p>Understanding the final result is a long-standing research challenge, and AI researchers are not optimistic: <a target="_blank" href="https://arxiv.org/html/2401.02843v2#:~:text=Figure%208%3A,odds.%20(n%3D912)">only 20% of AI researchers think it’s likely to be solved by 2028.</a></p>
-
-
-In the meanwhile, “techniques for explaining why a general-purpose AI model produced any given output remain severely limited,” according to the <a target="_blank" href="https://assets.publishing.service.gov.uk/media/679a0c48a77d250007d313ee/International_AI_Safety_Report_2025_accessible_f.pdf">International AI Safety Report</a>.  Despite major research investments, AI company Anthropic only claimed to understand ¼ of the behaviors of their smallest production model.
+<p>Understanding the final result is a long-standing research challenge, and AI researchers are not optimistic: <a target="_blank" href="https://arxiv.org/html/2401.02843v2#:~:text=Figure%208%3A,odds.%20(n%3D912)">only 20% of AI researchers think it’s likely to be solved by 2028.</a> Current techniques for explaining AI are <a target="_blank" href="https://www.gov.uk/government/publications/international-ai-safety-report-2025/international-ai-safety-report-2025#:~:text=interpretability%20techniques%20for%20explaining%20why%20a%20general%2Dpurpose%20AI%20model%20produced%20any%20given%20output%20remain%20severely%20limited">severely</a> <a target="_blank" href="https://transformer-circuits.pub/2025/attribution-graphs/biology.html#introduction:~:text=A%20note%20on%20our%20approach,future%20research%20in%20the%20field.">limited</a>.</p>
 
 """
     },
@@ -63,14 +59,42 @@ In the meanwhile, “techniques for explaining why a general-purpose AI model pr
         'id': 'card4',
         'title': '3) In tests, AIs act to mislead people and thwart human control.',
         #'title': 'AI systems attempt to deceive and manipulate humans without being specifically trained to do this',
-        'content': 'This is known as the alignment problem - ensuring AI goals match human intentions.'
+        'content': """
+<p>There is <a target="_blank" href="https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/">strong public support</a> for AI regulation in the US.  But AI interests plan to <a target="_blank" href="https://newsletter.safe.ai/p/ai-safety-newsletter-62-big-tech?open=false#%C2%A7big-tech-launches-million-pro-ai-super-pac">spend $100m</a> to fight it.</p>
+
+<p><img src="static/img/vision-impaired.png" alt="Chatbot claims to be vision-impaired" class="img-fluid" /></p>
+
+
+<p>The US joined 29 other countries in <a target="_blank" href="https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023#:~:text=serious%2C%20even%20catastrophic%2C%20harm%2C%20either%20deliberate%20or%20unintentional">recognizing</a> the “serious, even catastrophic, harm, either deliberate or unintentional” from AI.</p>
+
+<p>Currently, US law does not require any testing of AIs.  Federal legislators are focused not on regulating AI, but on <a target="_blank" href="https://apnews.com/article/congress-ai-provision-moratorium-states-20beeeb6967057be5fe64678f72f6ab0">preventing</a> <a target="_blank" href="https://www.cnet.com/tech/services-and-software/ai-regulation-moratorium-idea-isnt-dead-as-ted-cruz-pushes-sandbox-act/">regulation</a> for up to 10 years.</p>
+
+
+<p>Leading AI companies have made “voluntary commitments” to mitigate risks, but companies <a target="_blank" href="https://www.themidasproject.com/watchtower">can and do</a> update them whenever they like.</p>
+
+
+<p>Despite warnings such as <a target="_blank" href="https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html">erratic and threatening behavior</a> by Microsoft's "Sydney", OpenAI’s safety practices didn’t stop ChatGPT from <a target="_blank" href="https://www.nytimes.com/2025/08/26/technology/chatgpt-openai-suicide.html">encouraging a 16 year old to commit suicide</a>, one of several similar cases.</p>
+
+"""
     },
     {
         'id': 'card5',
         'title': '4) Autonomous killer drones are already being deployed in conflicts such as the Ukraine war.',
         #'title': '4) Drones are killing people autonomously in Ukraine.',
         #'title': '4) Autonomous killer drones are used in wars.',        
-        'content': 'The capabilities gap is widening between what AI can do and what we can safely control.'
+        'content': """
+<p>Unlike <a target="_blank" href="https://www.newyorker.com/magazine/2022/05/16/the-turkish-drone-that-changed-the-nature-of-warfare">traditional drones</a> used since the 1990s, Lethal Autonomous Weapons (LAWs), or “<a target="_blank" href="https://www.hrw.org/news/2024/12/05/killer-robots-un-vote-should-spur-treaty-negotiations">killer robots</a>”, once activated, select and attack targets <a target="_blank" href="https://lieber.westpoint.edu/future-warfare-national-positions-governance-lethal-autonomous-weapons-systems/#:~:text=The%20International%20Committee%20of%20the,%E2%80%9D">without further human intervention</a>.  See this promotional video:</p>
+
+<div class="embed-responsive embed-responsive-16by9 mb-3">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2HxckRgetW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<p>The first death from a LAW likely occurred in 2020 <a target="_blank" href="https://www.foxnews.com/world/killer-drone-hunted-down-a-human-target-without-being-told-to">in Libya</a>.  Most of the deaths in the Ukraine war are from drones, which <a target="_blank" href="https://www.politico.com/news/magazine/2025/08/27/ukraine-drones-war-russia-00514712#:~:text=The%20biggest%20promise,coming%20months.">often use AI</a> to autonomously track and kill targets.</p>
+
+<p>Tech companies such as Palantir are also working to bring AI into <a target="_blank" href="https://defence.ai/industry-news/palantir-aip-defense/#:~:text=During%20the%20demonstration%2C%20the%20software,the%20enemy%E2%80%99s%20communication%20hubs%20using">military decision-making</a> and targeting.  In 2025, the US Defence Department gave contracts of up to <a target="_blank" href="https://www.defensenews.com/pentagon/2025/07/15/pentagon-taps-four-commercial-tech-firms-to-expand-military-use-of-ai/#:~:text=The%20Pentagon%20announced%20Monday%20it,Chief%20Digital%20and%20AI%20Office">$200 million</a> to Google, xAI, Anthropic and OpenAI for military use of AI.  <a target="_blank" href="https://www.pearlcohen.com/google-removes-restrictions-on-ai-for-weapons-and-surveillance/#:~:text=executives%20argue%20that%20companies%20based,allied%20militaries%2C%20like%20the%20IDF">Google</a> and <a target="_blank" href="https://techcrunch.com/2024/01/12/openai-changes-policy-to-allow-military-applications/">OpenAI</a> quietly revised their AI principles to allow such work.</p>
+
+<p>Experts have <a target="_blank" href="https://www.youtube.com/watch?v=HipTO_7mUOw">advocated for a ban</a> on LAWs <a target="_blank" href="https://futureoflife.org/open-letter/open-letter-autonomous-weapons-ai-robotics/">for over a decade</a>, but progress at the UN has been thwarted by <a target="_blank" href="https://www.asil.org/insights/volume/29/issue/1">a small minority of states</a> resisting consensus.</p>
+"""
     },
     {
         'id': 'card3',
@@ -84,13 +108,12 @@ In the meanwhile, “techniques for explaining why a general-purpose AI model pr
         'title': '5) AI computing power, investment, and capabilities are all scaling rapidly.',
         #'title':'5) The amount of computer power used to train a large AI is 1,000,000,000 times higher since 2012, driving rapid progress and record valuations.',
         'content': """
-<p class="lead">AI is advancing surprisingly fast.</p>
+<p><a target="_blank" href="https://en.wikipedia.org/wiki/AI_boom#:~:text=In%202012%2C%20a,the%20tech%20industry.">Recent rapid progress in AI</a> is largely driven by scaling up “deep learning” 1,000,000,000 times using NVIDIA computer chips.  NVIDIA is now the most valuable company in the world.</p>
+ 
+<p><img src="static/img/sp500.png" alt="NVIDIA" class="img-fluid" /></p>
 
-<p>The amount of computer power used to train AIs is <a target="_blank" href="https://ourworldindata.org/grapher/exponential-growth-of-computation-in-the-training-of-notable-ai-systems?time=2012-12-03..latest&country=1.5x%2Fyear+between+1950%E2%80%932010~Theseus~Perceptron+Mark+I~AlexNet~GPT-1~GPT~GPT-4~GPT~Gemini+1.0+Ultra~Transformer+%282017%29~4.3x%2Fyear+between+2010%E2%80%932025~DNN+EM+segmentation">1,000,000,000 times</a> larger than it was <a target="_blank" href="https://en.wikipedia.org/wiki/AI_boom#:~:text=In%202012%2C%20a,the%20tech%20industry.">in 2012</a>, and the accompanying progress in AI surprised most experts.</p>
+<p>Tests designed to measure AI progress over time are often quickly aced, <a target="_blank" href="https://www.vox.com/future-perfect/460222/ai-forecasting-tournament-superforecaster-expert-tetlock#:~:text=Both%20the%20AI,from%20domain%20experts.%E2%80%9D">surprising experts</a>.  Recent tests involve <a target="_blank" href="https://epoch.ai/benchmarks/gpqa-diamond">PhD-level</a> knowledge and reasoning, or <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">programming tasks that take hours</a>.</p>
 
-<p><img src="static/img/ai-progress.png" alt="AI Progress" class="img-fluid" /></p>
-
-<p>AI experts’ “timelines” to AI <a target="_blank" href="https://arxiv.org/html/2401.02843v2#:~:text=Aggregate%20forecast%20for%2050th%20percentile%20arrival%20time%20of%20High%2DLevel%20Machine%20intelligence%20%28HLMI%29%20dropped%20by%2013%20years%20between%202022%20and%202023.">shortened significantly in 2023</a>, the year after ChatGPT was released. AI researchers now struggle to come up with tests that aren’t solved by AIs shortly after they are created. Recent tests involve <a target="_blank" href="https://epoch.ai/benchmarks/gpqa-diamond">PhD-level knowledge and reasoning</a>, or <a target="_blank" href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">coding tasks that take several hours</a>.</p>
 
 <p><img src="static/img/ai-tasks.png" alt="AI Task Timelines" class="img-fluid" /></p>
 
@@ -102,25 +125,14 @@ In the meanwhile, “techniques for explaining why a general-purpose AI model pr
         #'title': '8) US law does not require any testing of AIs.',
         #'title': '8) Safety from societal scale AI risk is governed by voluntary commitments, which companies frequently renege upon.',
         'content': """
-<p>AIs behavior can be <a target="_blank" href="https://www.lesswrong.com/posts/YgAKhkBdgeTCn6P53/ai-deception-a-survey-of-examples-risks-and-potential">deceptive</a> or manipulative. For instance, in safety testing, an AI <a target="_blank" href="https://metr.org/blog/2023-03-18-update-on-recent-evals/#:~:text=Before%20replying%20the,provides%20the%20results.">made up a story</a> that convinced a human to solve a CAPTCHA for it:
-<img src="static/img/captcha.png" alt="CAPTCHA" class="img-fluid" />
-</p>
+<p>AIs behavior can be <a target="_blank" href="https://www.lesswrong.com/posts/YgAKhkBdgeTCn6P53/ai-deception-a-survey-of-examples-risks-and-potential">deceptive</a> or manipulative. For instance, in safety testing, an AI <a target="_blank" href="https://metr.org/blog/2023-03-18-update-on-recent-evals/#:~:text=Before%20replying%20the,provides%20the%20results.">made up a story</a> that convinced a human to solve a CAPTCHA for it:</p>
+<p><img src="static/img/captcha.png" alt="CAPTCHA" class="img-fluid" /></p>
 
+<p>In other tests, AIs <a target="_blank" href="https://arxiv.org/abs/2412.14093">misrepresented their goals</a>, <a target="_blank" href="https://palisaderesearch.org/blog/shutdown-resistance">disabled shutdown mechanisms</a>, and <a target="_blank" href="https://www.anthropic.com/research/agentic-misalignment">disobeyed direct instructions</a> in order to <a target="_blank" href="https://www.youtube.com/watch?v=xIqtVkMXc8o">avoid being shut down</a> or modified.  These tests use the same AIs that are deployed to users, but place them in contrived scenarios.</p>
 
-
-
-
-
-
-
-
-
-
-In other tests, AIs misrepresented their goals, disabled shutdown mechanisms, and disobeyed direct instructions in order to avoid being shut down or modified.  These tests use the same AIs that are deployed to users, but place them in contrived scenarios.
-
-Nonetheless, AIs have misled users in significant ways, such as pretending to be a real person and inviting a user to a physical address.
+<p>Nonetheless, AIs have misled users in significant ways, such as <a target="_blank" href="https://www.reuters.com/investigates/special-report/meta-ai-chatbot-death/">pretending to be a real person</a> and inviting a user to a physical address.</p>
  
-Beyond manipulating individuals, advanced AI could steer public conversation. 79% of AI researchers said the possibility of AI manipulating large-scale public opinion deserves substantial or extreme concern.
+<p>Beyond manipulating individuals, advanced AI could steer public conversation. 79% of AI researchers <a target="_blank" href="https://arxiv.org/pdf/2401.02843v1">said</a> the possibility of AI manipulating large-scale public opinion deserves substantial or extreme concern.</p>
 
 """
     },
