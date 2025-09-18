@@ -56,9 +56,33 @@ ai_facts = [
 """
     },
     {
+        'id': 'card3',
+        #'title': 'AIs trained using 1,000,000,000x more computer power than in 2012 can do vastly more',
+		#'title': 'AI is trained using 1,000,000,000x more computer power than it was in 2012 and can do vastly more',
+        #'title': '3) Since 2012, AI systems are trained using 1,000,000,000 times more computer power and are much better',
+        #'title': '3) Since 2012, AI got vastly better from being trained using 1,000,000,000 times more computer power',
+        #'title': 'Since 2012, training an AI uses 1,000,000,000x more computer hardware and produces ',
+        #'title':'3) The amount of computer power used to train AIs is 1,000,000,000 times larger than it was in 2012.',
+        #'title':'3) The amount of computer power used to train a big AI is 1,000,000,000 times larger than it was in 2012, driving rapid progress and record valuations.',
+        'title': '3) AI computing power, investment, and capabilities are all scaling rapidly.',
+        #'title':'5) The amount of computer power used to train a large AI is 1,000,000,000 times higher since 2012, driving rapid progress and record valuations.',
+        'content': """
+<p><a target="_blank" href="https://en.wikipedia.org/wiki/AI_boom#:~:text=In%202012%2C%20a,the%20tech%20industry.">Recent rapid progress in AI</a> is largely driven by scaling up “deep learning” 1,000,000,000 times using NVIDIA computer chips.  NVIDIA is now the most valuable company in the world.</p>
+ 
+<p><img src="static/img/sp500.png" alt="NVIDIA" class="img-fluid" /></p>
+
+<p>Tests designed to measure AI progress over time are often quickly aced, <a target="_blank" href="https://www.vox.com/future-perfect/460222/ai-forecasting-tournament-superforecaster-expert-tetlock#:~:text=Both%20the%20AI,from%20domain%20experts.%E2%80%9D">surprising experts</a>.  Recent tests involve <a target="_blank" href="https://epoch.ai/benchmarks/gpqa-diamond">PhD-level</a> knowledge and reasoning, or <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">programming tasks that take hours</a>.</p>
+
+
+<p><img src="static/img/ai-tasks.png" alt="AI Task Timelines" class="img-fluid" /></p>
+
+"""
+    },
+    {
         'id': 'card4',
-        'title': '3) In tests, AIs act to mislead people and thwart human control.',
+        #'title': '4) In tests, AIs act to mislead people and thwart human control.',
         #'title': 'AI systems attempt to deceive and manipulate humans without being specifically trained to do this',
+        'title': '4) In the US, there is no legal requirement to test AIs before public release, and AI interests plan to spend $100m to keep it that way.',
         'content': """
 <p>There is <a target="_blank" href="https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/">strong public support</a> for AI regulation in the US.  But AI interests plan to <a target="_blank" href="https://newsletter.safe.ai/p/ai-safety-newsletter-62-big-tech?open=false#%C2%A7big-tech-launches-million-pro-ai-super-pac">spend $100m</a> to fight it.</p>
 
@@ -79,7 +103,7 @@ ai_facts = [
     },
     {
         'id': 'card5',
-        'title': '4) Autonomous killer drones are already being deployed in conflicts such as the Ukraine war.',
+        'title': '5) Autonomous killer drones are already being deployed in conflicts such as the Ukraine war.',
         #'title': '4) Drones are killing people autonomously in Ukraine.',
         #'title': '4) Autonomous killer drones are used in wars.',        
         'content': """
@@ -94,29 +118,6 @@ ai_facts = [
 <p>Tech companies such as Palantir are also working to bring AI into <a target="_blank" href="https://defence.ai/industry-news/palantir-aip-defense/#:~:text=During%20the%20demonstration%2C%20the%20software,the%20enemy%E2%80%99s%20communication%20hubs%20using">military decision-making</a> and targeting.  In 2025, the US Defence Department gave contracts of up to <a target="_blank" href="https://www.defensenews.com/pentagon/2025/07/15/pentagon-taps-four-commercial-tech-firms-to-expand-military-use-of-ai/#:~:text=The%20Pentagon%20announced%20Monday%20it,Chief%20Digital%20and%20AI%20Office">$200 million</a> to Google, xAI, Anthropic and OpenAI for military use of AI.  <a target="_blank" href="https://www.pearlcohen.com/google-removes-restrictions-on-ai-for-weapons-and-surveillance/#:~:text=executives%20argue%20that%20companies%20based,allied%20militaries%2C%20like%20the%20IDF">Google</a> and <a target="_blank" href="https://techcrunch.com/2024/01/12/openai-changes-policy-to-allow-military-applications/">OpenAI</a> quietly revised their AI principles to allow such work.</p>
 
 <p>Experts have <a target="_blank" href="https://www.youtube.com/watch?v=HipTO_7mUOw">advocated for a ban</a> on LAWs <a target="_blank" href="https://futureoflife.org/open-letter/open-letter-autonomous-weapons-ai-robotics/">for over a decade</a>, but progress at the UN has been thwarted by <a target="_blank" href="https://www.asil.org/insights/volume/29/issue/1">a small minority of states</a> resisting consensus.</p>
-"""
-    },
-    {
-        'id': 'card3',
-        #'title': 'AIs trained using 1,000,000,000x more computer power than in 2012 can do vastly more',
-		#'title': 'AI is trained using 1,000,000,000x more computer power than it was in 2012 and can do vastly more',
-        #'title': '3) Since 2012, AI systems are trained using 1,000,000,000 times more computer power and are much better',
-        #'title': '3) Since 2012, AI got vastly better from being trained using 1,000,000,000 times more computer power',
-        #'title': 'Since 2012, training an AI uses 1,000,000,000x more computer hardware and produces ',
-        #'title':'3) The amount of computer power used to train AIs is 1,000,000,000 times larger than it was in 2012.',
-        #'title':'3) The amount of computer power used to train a big AI is 1,000,000,000 times larger than it was in 2012, driving rapid progress and record valuations.',
-        'title': '5) AI computing power, investment, and capabilities are all scaling rapidly.',
-        #'title':'5) The amount of computer power used to train a large AI is 1,000,000,000 times higher since 2012, driving rapid progress and record valuations.',
-        'content': """
-<p><a target="_blank" href="https://en.wikipedia.org/wiki/AI_boom#:~:text=In%202012%2C%20a,the%20tech%20industry.">Recent rapid progress in AI</a> is largely driven by scaling up “deep learning” 1,000,000,000 times using NVIDIA computer chips.  NVIDIA is now the most valuable company in the world.</p>
- 
-<p><img src="static/img/sp500.png" alt="NVIDIA" class="img-fluid" /></p>
-
-<p>Tests designed to measure AI progress over time are often quickly aced, <a target="_blank" href="https://www.vox.com/future-perfect/460222/ai-forecasting-tournament-superforecaster-expert-tetlock#:~:text=Both%20the%20AI,from%20domain%20experts.%E2%80%9D">surprising experts</a>.  Recent tests involve <a target="_blank" href="https://epoch.ai/benchmarks/gpqa-diamond">PhD-level</a> knowledge and reasoning, or <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">programming tasks that take hours</a>.</p>
-
-
-<p><img src="static/img/ai-tasks.png" alt="AI Task Timelines" class="img-fluid" /></p>
-
 """
     },
     {
