@@ -134,10 +134,11 @@ ai_facts = [
 <p>In fact, CEOs of these three top AI labs signed a <a href="https://safe.ai/work/statement-on-ai-risk">statement</a> that AI poses a serious risk of human extinction. <a target="_blank" href="https://www.youtube.com/watch?t=34&v=UvAR8wESFaw&feature=youtu.be">Elon Musk</a>, xAI CEO, also says “It's about 10% or 20% [that AI destroys humanity]".</p>
 
 
-<p>OpenAI CEO <a target="_blank" href="https://www.youtube.com/clip/UgkxSvRn5lP0wE7RpQhVZjUZpW7hmYFuF1bR?si=q9_LpVv3Ff2d7nbB">Sam Altman in 2015</a>:<br />
-<a target="_blank" href="https://www.youtube.com/clip/UgkxSvRn5lP0wE7RpQhVZjUZpW7hmYFuF1bR?si=q9_LpVv3Ff2d7nbB"><img src="static/img/altman1.png" alt="Altman" class="img-fluid" /></a></p>
+<p>OpenAI CEO <a target="_blank" href="https://www.youtube.com/clip/UgkxSvRn5lP0wE7RpQhVZjUZpW7hmYFuF1bR?si=q9_LpVv3Ff2d7nbB">Sam Altman in 2015</a>:<br /></p>
 
-
+<div class="embed-responsive embed-responsive-16by9 mb-3">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d6lDZpvHAoo?si=hgnec_L68ljrPLnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 """
     },
@@ -152,7 +153,9 @@ ai_facts = [
 
 <p>Anthropic CEO Dario Amodei <a target="_blank" href="https://www.youtube.com/watch?v=NWxHOrn8-rs">warns</a> that AI could cause 10-20% unemployment in 1-5 years.</p>
 
-<p><img src="static/img/dario.png" alt="Dario Amodei" class="img-fluid" /></p>
+<div class="embed-responsive embed-responsive-16by9 mb-3">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NWxHOrn8-rs?si=tlpz9v18L5mzRnj9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 """
     },
