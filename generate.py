@@ -56,54 +56,26 @@ ai_facts = [
 """
     },
     {
-        'id': 'card3',
-        #'title': 'AIs trained using 1,000,000,000x more computer power than in 2012 can do vastly more',
-		#'title': 'AI is trained using 1,000,000,000x more computer power than it was in 2012 and can do vastly more',
-        #'title': '3) Since 2012, AI systems are trained using 1,000,000,000 times more computer power and are much better',
-        #'title': '3) Since 2012, AI got vastly better from being trained using 1,000,000,000 times more computer power',
-        #'title': 'Since 2012, training an AI uses 1,000,000,000x more computer hardware and produces ',
-        #'title':'3) The amount of computer power used to train AIs is 1,000,000,000 times larger than it was in 2012.',
-        #'title':'3) The amount of computer power used to train a big AI is 1,000,000,000 times larger than it was in 2012, driving rapid progress and record valuations.',
-        'title': '3) AI computing power, investment, and capabilities are all scaling rapidly.',
-        #'title':'5) The amount of computer power used to train a large AI is 1,000,000,000 times higher since 2012, driving rapid progress and record valuations.',
+        'id': 'card6',
+        #'title': '6) In various concocted test scenarios, AI systems hide their bad behavior, in apparent attempts to bypass human oversight and control.',
+        #'title': '8) US law does not require any testing of AIs.',
+        #'title': '8) Safety from societal scale AI risk is governed by voluntary commitments, which companies frequently renege upon.',
+        'title': '3) In tests, AIs act to mislead people and thwart human control.',
         'content': """
-<p><a target="_blank" href="https://en.wikipedia.org/wiki/AI_boom#:~:text=In%202012%2C%20a,the%20tech%20industry.">Recent rapid progress in AI</a> is largely driven by scaling up “deep learning” 1,000,000,000 times using NVIDIA computer chips.  NVIDIA is now the most valuable company in the world.</p>
+<p>AIs behavior can be <a target="_blank" href="https://www.lesswrong.com/posts/YgAKhkBdgeTCn6P53/ai-deception-a-survey-of-examples-risks-and-potential">deceptive</a> or manipulative. For instance, in safety testing, an AI <a target="_blank" href="https://metr.org/blog/2023-03-18-update-on-recent-evals/#:~:text=Before%20replying%20the,provides%20the%20results.">made up a story</a> that convinced a human to solve a CAPTCHA for it:</p>
+<p><img src="static/img/captcha.png" alt="CAPTCHA" class="img-fluid" /></p>
+
+<p>In other tests, AIs <a target="_blank" href="https://arxiv.org/abs/2412.14093">misrepresented their goals</a>, <a target="_blank" href="https://palisaderesearch.org/blog/shutdown-resistance">disabled shutdown mechanisms</a>, and <a target="_blank" href="https://www.anthropic.com/research/agentic-misalignment">disobeyed direct instructions</a> in order to <a target="_blank" href="https://www.youtube.com/watch?v=xIqtVkMXc8o">avoid being shut down</a> or modified.  These tests use the same AIs that are deployed to users, but place them in contrived scenarios.</p>
+
+<p>Nonetheless, AIs have misled users in significant ways, such as <a target="_blank" href="https://www.reuters.com/investigates/special-report/meta-ai-chatbot-death/">pretending to be a real person</a> and inviting a user to a physical address.</p>
  
-<p><img src="static/img/sp500.png" alt="NVIDIA" class="img-fluid" /></p>
-
-<p>Tests designed to measure AI progress over time are often quickly aced, <a target="_blank" href="https://www.vox.com/future-perfect/460222/ai-forecasting-tournament-superforecaster-expert-tetlock#:~:text=Both%20the%20AI,from%20domain%20experts.%E2%80%9D">surprising experts</a>.  Recent tests involve <a target="_blank" href="https://epoch.ai/benchmarks/gpqa-diamond">PhD-level</a> knowledge and reasoning, or <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">programming tasks that take hours</a>.</p>
-
-
-<p><img src="static/img/ai-tasks.png" alt="AI Task Timelines" class="img-fluid" /></p>
-
-"""
-    },
-    {
-        'id': 'card4',
-        #'title': '4) In tests, AIs act to mislead people and thwart human control.',
-        #'title': 'AI systems attempt to deceive and manipulate humans without being specifically trained to do this',
-        'title': '4) In the US, there is no legal requirement to test AIs before public release, and AI interests plan to spend $100m to keep it that way.',
-        'content': """
-<p>There is <a target="_blank" href="https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/">strong public support</a> for AI regulation in the US.  But AI interests plan to <a target="_blank" href="https://newsletter.safe.ai/p/ai-safety-newsletter-62-big-tech?open=false#%C2%A7big-tech-launches-million-pro-ai-super-pac">spend $100m</a> to fight it.</p>
-
-<p><img src="static/img/vision-impaired.png" alt="Chatbot claims to be vision-impaired" class="img-fluid" /></p>
-
-
-<p>The US joined 29 other countries in <a target="_blank" href="https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023#:~:text=serious%2C%20even%20catastrophic%2C%20harm%2C%20either%20deliberate%20or%20unintentional">recognizing</a> the “serious, even catastrophic, harm, either deliberate or unintentional” from AI.</p>
-
-<p>Currently, US law does not require any testing of AIs.  Federal legislators are focused not on regulating AI, but on <a target="_blank" href="https://apnews.com/article/congress-ai-provision-moratorium-states-20beeeb6967057be5fe64678f72f6ab0">preventing</a> <a target="_blank" href="https://www.cnet.com/tech/services-and-software/ai-regulation-moratorium-idea-isnt-dead-as-ted-cruz-pushes-sandbox-act/">regulation</a> for up to 10 years.</p>
-
-
-<p>Leading AI companies have made “voluntary commitments” to mitigate risks, but companies <a target="_blank" href="https://www.themidasproject.com/watchtower">can and do</a> update them whenever they like.</p>
-
-
-<p>Despite warnings such as <a target="_blank" href="https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html">erratic and threatening behavior</a> by Microsoft's "Sydney", OpenAI’s safety practices didn’t stop ChatGPT from <a target="_blank" href="https://www.nytimes.com/2025/08/26/technology/chatgpt-openai-suicide.html">encouraging a 16 year old to commit suicide</a>, one of several similar cases.</p>
+<p>Beyond manipulating individuals, advanced AI could steer public conversation. 79% of AI researchers <a target="_blank" href="https://arxiv.org/pdf/2401.02843v1">said</a> the possibility of AI manipulating large-scale public opinion deserves substantial or extreme concern.</p>
 
 """
     },
     {
         'id': 'card5',
-        'title': '5) Autonomous killer drones are already being deployed in conflicts such as the Ukraine war.',
+        'title': '4) Autonomous killer drones are already being deployed in conflicts such as the Ukraine war.',
         #'title': '4) Drones are killing people autonomously in Ukraine.',
         #'title': '4) Autonomous killer drones are used in wars.',        
         'content': """
@@ -121,25 +93,30 @@ ai_facts = [
 """
     },
     {
-        'id': 'card6',
-        'title': '6) In various concocted test scenarios, AI systems hide their bad behavior, in apparent attempts to bypass human oversight and control.',
-        #'title': '8) US law does not require any testing of AIs.',
-        #'title': '8) Safety from societal scale AI risk is governed by voluntary commitments, which companies frequently renege upon.',
+        'id': 'card3',
+        #'title': 'AIs trained using 1,000,000,000x more computer power than in 2012 can do vastly more',
+		#'title': 'AI is trained using 1,000,000,000x more computer power than it was in 2012 and can do vastly more',
+        #'title': '3) Since 2012, AI systems are trained using 1,000,000,000 times more computer power and are much better',
+        #'title': '3) Since 2012, AI got vastly better from being trained using 1,000,000,000 times more computer power',
+        #'title': 'Since 2012, training an AI uses 1,000,000,000x more computer hardware and produces ',
+        #'title':'3) The amount of computer power used to train AIs is 1,000,000,000 times larger than it was in 2012.',
+        #'title':'3) The amount of computer power used to train a big AI is 1,000,000,000 times larger than it was in 2012, driving rapid progress and record valuations.',
+        'title': '5) AI computing power, investment, and capabilities are all scaling rapidly.',
+        #'title':'5) The amount of computer power used to train a large AI is 1,000,000,000 times higher since 2012, driving rapid progress and record valuations.',
         'content': """
-<p>AIs behavior can be <a target="_blank" href="https://www.lesswrong.com/posts/YgAKhkBdgeTCn6P53/ai-deception-a-survey-of-examples-risks-and-potential">deceptive</a> or manipulative. For instance, in safety testing, an AI <a target="_blank" href="https://metr.org/blog/2023-03-18-update-on-recent-evals/#:~:text=Before%20replying%20the,provides%20the%20results.">made up a story</a> that convinced a human to solve a CAPTCHA for it:</p>
-<p><img src="static/img/captcha.png" alt="CAPTCHA" class="img-fluid" /></p>
-
-<p>In other tests, AIs <a target="_blank" href="https://arxiv.org/abs/2412.14093">misrepresented their goals</a>, <a target="_blank" href="https://palisaderesearch.org/blog/shutdown-resistance">disabled shutdown mechanisms</a>, and <a target="_blank" href="https://www.anthropic.com/research/agentic-misalignment">disobeyed direct instructions</a> in order to <a target="_blank" href="https://www.youtube.com/watch?v=xIqtVkMXc8o">avoid being shut down</a> or modified.  These tests use the same AIs that are deployed to users, but place them in contrived scenarios.</p>
-
-<p>Nonetheless, AIs have misled users in significant ways, such as <a target="_blank" href="https://www.reuters.com/investigates/special-report/meta-ai-chatbot-death/">pretending to be a real person</a> and inviting a user to a physical address.</p>
+<p><a target="_blank" href="https://en.wikipedia.org/wiki/AI_boom#:~:text=In%202012%2C%20a,the%20tech%20industry.">Recent rapid progress in AI</a> is largely driven by scaling up “deep learning” 1,000,000,000 times using NVIDIA computer chips.  NVIDIA is now the most valuable company in the world.</p>
  
-<p>Beyond manipulating individuals, advanced AI could steer public conversation. 79% of AI researchers <a target="_blank" href="https://arxiv.org/pdf/2401.02843v1">said</a> the possibility of AI manipulating large-scale public opinion deserves substantial or extreme concern.</p>
+<p><img src="static/img/sp500.png" alt="NVIDIA" class="img-fluid" /></p>
+
+<p>Tests designed to measure AI progress over time are often quickly aced, <a target="_blank" href="https://www.vox.com/future-perfect/460222/ai-forecasting-tournament-superforecaster-expert-tetlock#:~:text=Both%20the%20AI,from%20domain%20experts.%E2%80%9D">surprising experts</a>.  Recent tests involve <a target="_blank" href="https://epoch.ai/benchmarks/gpqa-diamond">PhD-level</a> knowledge and reasoning, or <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">programming tasks that take hours</a>.</p>
+
+
+<p><img src="static/img/ai-tasks.png" alt="AI Task Timelines" class="img-fluid" /></p>
 
 """
     },
-
     {
-        'id': 'card7',
+        'id': 'card6',
         #'title': 'AI companies want to build “superintelligent” AIs smart enough to take over the world, while admitting they don’t know how to control them.', 
         #AI companies are trying to build AI smarter than people, despite not knowing how to control AI even at today’s levels.
         #'title': '6) AI companies racing to build ‘superintelligent’ AIs far surpassing human capacities admit they have no plan to control these.',
@@ -148,7 +125,7 @@ ai_facts = [
         #'title': '6) AI companies are building ‘superintelligent’ AIs far surpassing human capacities admit that preventing catastrophe from these is an open question.',
         #'title': '6) AI companies want to build ‘superintelligent’ AIs more competent than any human, while admitting they don’t know how to control them.',
         #'title': 'AI companies want to build \'superintelligent\' AIs they admit they don\'t know how to control',
-        'title': '7) AI companies want to build \"superintelligent\" AIs, while admitting they don\'t know how to control them.',
+        'title': '6) AI companies want to build \"superintelligent\" AIs, while admitting they don\'t know how to control them.',
         'content': """
 <p>Meta CEO <a target="_blank" href="https://www.meta.com/superintelligence/">Mark Zuckerberg</a> and OpenAI CEO <a target="_blank" href="https://blog.samaltman.com/the-gentle-singularity">Sam Altman</a> say their companies intend to build "superintelligence"—AI far smarter than any human. <a target="_blank" href="https://deepmind.google/discover/blog/taking-a-responsible-path-to-agi/">Google DeepMind</a> and other AI companies are also working toward human-level or superhuman AI.</p>
 
@@ -165,8 +142,8 @@ ai_facts = [
 """
     },
     {
-        'id': 'card8',
-        'title': '8) AI is already displacing workers.  Further advances could cause record unemployment.',
+        'id': 'card7',
+        'title': '7) AI is already displacing workers.  Further advances could cause record unemployment.',
         #'title': 'Human-level AI could cause record unemployment',
         'content': """
 <p>According to the <a target="_blank" href="https://www.gov.uk/government/publications/international-ai-safety-report-2025/international-ai-safety-report-2025#systemic-risks:~:text=In%20potential%20future%20scenarios%20with%20general%2Dpurpose%20AI%20that%20outperforms%20humans%20on%20many%20complex%20tasks%2C%20the%20labour%20market%20impacts%20would%20likely%20be%20profound.">International AI Safety Report</a>, “with general-purpose AI that outperforms humans on many complex tasks, the labour market impacts would likely be profound”.  Researchers found entry-level jobs are already affected in sectors such as customer service, accounting, software development, and administration.</p>
@@ -176,6 +153,30 @@ ai_facts = [
 <p>Anthropic CEO Dario Amodei <a target="_blank" href="https://www.youtube.com/watch?v=NWxHOrn8-rs">warns</a> that AI could cause 10-20% unemployment in 1-5 years.</p>
 
 <p><img src="static/img/dario.png" alt="Dario Amodei" class="img-fluid" /></p>
+
+"""
+    },
+    {
+        'id': 'card8',
+        #'title': '4) In tests, AIs act to mislead people and thwart human control.',
+        #'title': 'AI systems attempt to deceive and manipulate humans without being specifically trained to do this',
+        #'title': '3) In the US, there is no legal requirement to test AIs before public release, and AI interests plan to spend $100m to keep it that way.',
+        'title': '8) US law does not require companies to test AIs before releasing them',
+        'content': """
+<p>There is <a target="_blank" href="https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/">strong public support</a> for AI regulation in the US.  But AI interests plan to <a target="_blank" href="https://newsletter.safe.ai/p/ai-safety-newsletter-62-big-tech?open=false#%C2%A7big-tech-launches-million-pro-ai-super-pac">spend $100m</a> to fight it.</p>
+
+<p><img src="static/img/concerned.png" alt="Chatbot claims to be vision-impaired" class="img-fluid" /></p>
+
+
+<p>The US joined 29 other countries in <a target="_blank" href="https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023#:~:text=serious%2C%20even%20catastrophic%2C%20harm%2C%20either%20deliberate%20or%20unintentional">recognizing</a> the “serious, even catastrophic, harm, either deliberate or unintentional” from AI.</p>
+
+<p>Currently, US law does not require any testing of AIs.  Federal legislators are focused not on regulating AI, but on <a target="_blank" href="https://apnews.com/article/congress-ai-provision-moratorium-states-20beeeb6967057be5fe64678f72f6ab0">preventing</a> <a target="_blank" href="https://www.cnet.com/tech/services-and-software/ai-regulation-moratorium-idea-isnt-dead-as-ted-cruz-pushes-sandbox-act/">regulation</a> for up to 10 years.</p>
+
+
+<p>Leading AI companies have made “voluntary commitments” to mitigate risks, but companies <a target="_blank" href="https://www.themidasproject.com/watchtower">can and do</a> update them whenever they like.</p>
+
+
+<p>Despite warnings such as <a target="_blank" href="https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html">erratic and threatening behavior</a> by Microsoft's "Sydney", OpenAI’s safety practices didn’t stop ChatGPT from <a target="_blank" href="https://www.nytimes.com/2025/08/26/technology/chatgpt-openai-suicide.html">encouraging a 16 year old to commit suicide</a>, one of several similar cases.</p>
 
 """
     },
