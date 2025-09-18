@@ -56,7 +56,7 @@ ai_facts = [
 """
     },
     {
-        'id': 'card6',
+        'id': 'card3',
         #'title': '6) In various concocted test scenarios, AI systems hide their bad behavior, in apparent attempts to bypass human oversight and control.',
         #'title': '8) US law does not require any testing of AIs.',
         #'title': '8) Safety from societal scale AI risk is governed by voluntary commitments, which companies frequently renege upon.',
@@ -74,7 +74,7 @@ ai_facts = [
 """
     },
     {
-        'id': 'card5',
+        'id': 'card4',
         'title': '4) Autonomous killer drones are already being deployed in conflicts such as the Ukraine war.',
         #'title': '4) Drones are killing people autonomously in Ukraine.',
         #'title': '4) Autonomous killer drones are used in wars.',        
@@ -93,7 +93,7 @@ ai_facts = [
 """
     },
     {
-        'id': 'card3',
+        'id': 'card5',
         #'title': 'AIs trained using 1,000,000,000x more computer power than in 2012 can do vastly more',
 		#'title': 'AI is trained using 1,000,000,000x more computer power than it was in 2012 and can do vastly more',
         #'title': '3) Since 2012, AI systems are trained using 1,000,000,000 times more computer power and are much better',
@@ -161,7 +161,7 @@ ai_facts = [
         #'title': '4) In tests, AIs act to mislead people and thwart human control.',
         #'title': 'AI systems attempt to deceive and manipulate humans without being specifically trained to do this',
         #'title': '3) In the US, there is no legal requirement to test AIs before public release, and AI interests plan to spend $100m to keep it that way.',
-        'title': '8) US law does not require companies to test AIs before releasing them',
+        'title': '8) US law does not require companies to test AIs before releasing them.',
         'content': """
 <p>There is <a target="_blank" href="https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/">strong public support</a> for AI regulation in the US.  But AI interests plan to <a target="_blank" href="https://newsletter.safe.ai/p/ai-safety-newsletter-62-big-tech?open=false#%C2%A7big-tech-launches-million-pro-ai-super-pac">spend $100m</a> to fight it.</p>
 
