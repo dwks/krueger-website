@@ -27,8 +27,9 @@ ai_facts = [
 <p>These include Yoshua Bengio and Nobel Prize winner Geoffrey Hinton, the two most <a target="_blank" href="https://www.adscientificindex.com/citation-ranking/">highly-cited scientists</a> of all time, who pioneered the techniques underlying all of today’s AI systems.  Hinton quit his job at Google in 2023 to warn the public about the dangers of AI.</p>
 
 <div class="embed-responsive embed-responsive-16by9 mb-3">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=66WiF8fXL0k&t=193s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/66WiF8fXL0k?si=oMhUHjLnvsHD5sY8&amp;start=194" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
 
 <p>On average, AI researchers believe there’s a <b>10-20% chance</b> of extremely bad, extinction-level outcomes.</p>
 """
@@ -104,7 +105,7 @@ ai_facts = [
 
 <p>Meanwhile OpenAI <a target="_blank" href="https://openai.com/index/introducing-superalignment/">says</a> breakthroughs are needed to control AI much smarter than us; DeepMind <a target="_blank" href="https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/evaluating-potential-cybersecurity-threats-of-advanced-ai/An_Approach_to_Technical_AGI_Safety_Apr_2025.pdf">agrees</a> "there remain many open research problems". <a href="https://www.anthropic.com/news/core-views-on-ai-safety">Anthropic</a> "aren’t confident it will go well".</p>
 
-<p>In fact, CEOs of these three top AI labs signed a <a href="https://safe.ai/work/statement-on-ai-risk">statement</a> that AI poses a serious risk of human extinction. <a target="_blank" href="https://www.businessinsider.com/elon-musk-20-percent-chance-ai-destroys-humanity-2024-3#:~:text=%22I%20think%20there%27s,the%20negative%20scenario.%22">Elon Musk</a>, xAI CEO, also says “It's about 10% or 20% [that AI destroys humanity]".</p>
+<p>In fact, CEOs of these three companies signed <a href="https://safe.ai/work/statement-on-ai-risk">statement</a> that AI poses a serious risk of human extinction. <a target="_blank" href="https://www.businessinsider.com/elon-musk-20-percent-chance-ai-destroys-humanity-2024-3#:~:text=%22I%20think%20there%27s,the%20negative%20scenario.%22">Elon Musk</a>, xAI CEO, also says “It's about 10% or 20% [that AI destroys humanity]." Dario Amodei says 25% “<a target="_blank" href="https://x.com/i/status/1968387815726891268">things go really, really badly</a>".</p>
 
 
 <p>OpenAI CEO <a target="_blank" href="https://www.youtube.com/clip/UgkxSvRn5lP0wE7RpQhVZjUZpW7hmYFuF1bR?si=q9_LpVv3Ff2d7nbB">Sam Altman in 2015</a>:<br /></p>
