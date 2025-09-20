@@ -90,10 +90,10 @@ ai_facts = [
  
 <p class="text-center"><img src="static/img/sp500.png" alt="NVIDIA" class="img-fluid" style="width: 80%;" /></p>
 
-<p>Tests designed to measure AI progress over time are often quickly aced, <a target="_blank" href="https://www.vox.com/future-perfect/460222/ai-forecasting-tournament-superforecaster-expert-tetlock#:~:text=Both%20the%20AI,from%20domain%20experts.%E2%80%9D">surprising experts</a>.  Recent tests involve <a target="_blank" href="https://epoch.ai/benchmarks/gpqa-diamond">PhD-level</a> knowledge and reasoning, or <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">programming tasks that take hours</a>.</p>
+<p>Tests designed to measure AI progress over time are often quickly aced, <a target="_blank" href="https://www.vox.com/future-perfect/460222/ai-forecasting-tournament-superforecaster-expert-tetlock#:~:text=Both%20the%20AI,from%20domain%20experts.%E2%80%9D">surprising experts</a>.  Recent tests involve <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">programming tasks that take hours</a>, or <a target="_blank" href="https://epoch.ai/benchmarks/gpqa-diamond">PhD-level</a> knowledge and reasoning (see below, click to zoom).</p>
 
 
-<p class="text-center"><a target="_blank" href="static/img/ai-tasks.png"><img src="static/img/ai-tasks.png" alt="AI Task Timelines" class="img-fluid" style="width: 80%;" /></a></p>
+<p class="text-center"><a target="_blank" href="static/img/ai-tasks.png"><img src="static/img/ai-tasks.png" alt="AI Task Timelines" class="img-fluid" style="width: 60%;" /></a></p>
 
 """
     },
