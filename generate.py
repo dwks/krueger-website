@@ -18,10 +18,7 @@ print(mailing_list)
 ai_facts = [
     {
         'id': 'card1',
-        #'title': 'Hundreds of AI leaders, including Nobel Prize-winning scientists, agreed that AI could lead to human extinction.',
-        #'title': 'Hundreds of top AI experts say that AI could lead to human extinction.',
         'title': '1) Top AI researchers believe advanced AI poses a serious risk of human extinction.', 
-        #'title': 'On average, AI researchers believe AI poses a 15% chance of human extinction or similar',         
         'content': """
 <p>In 2023, over 500 AI scientists signed this <a target="_blank" href="https://safe.ai/work/statement-on-ai-risk">statement</a>:</p>
 
@@ -30,7 +27,7 @@ ai_facts = [
 <p>These include Yoshua Bengio and Nobel Prize winner Geoffrey Hinton, the two most <a target="_blank" href="https://www.adscientificindex.com/citation-ranking/">highly-cited scientists</a> of all time, who pioneered the techniques underlying all of today’s AI systems.  Hinton quit his job at Google in 2023 to warn the public about the dangers of AI.</p>
 
 <div class="embed-responsive embed-responsive-16by9 mb-3">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/66WiF8fXL0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=66WiF8fXL0k&t=193s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <p>On average, AI researchers believe there’s a <b>10-20% chance</b> of extremely bad, extinction-level outcomes.</p>
@@ -38,7 +35,6 @@ ai_facts = [
     },
     {
         'id': 'card2',
-        #'title': 'Researchers still mostly don\'t understand how AI systems work, even after more than a decade of work and thousands of papers.',
         'title': '2) AI researchers understand how to \"grow\" AI systems, but not how they work.',
         'content': """
 <p>AIs often display weird and surprising behavior.   In 2023, Microsoft’s “Sydney” <a target="_blank" href="https://x.com/sethlazar/status/1626257535178280960">threatened</a> and <a target="_blank" href="https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html">tried to seduce users</a>:</p>
@@ -55,9 +51,6 @@ ai_facts = [
     },
     {
         'id': 'card3',
-        #'title': '6) In various concocted test scenarios, AI systems hide their bad behavior, in apparent attempts to bypass human oversight and control.',
-        #'title': '8) US law does not require any testing of AIs.',
-        #'title': '8) Safety from societal scale AI risk is governed by voluntary commitments, which companies frequently renege upon.',
         'title': '3) In tests, AIs act to mislead people and thwart human control.',
         'content': """
 <p>AIs behavior can be <a target="_blank" href="https://www.lesswrong.com/posts/YgAKhkBdgeTCn6P53/ai-deception-a-survey-of-examples-risks-and-potential">deceptive</a> or manipulative. For instance, in safety testing, an AI <a target="_blank" href="https://metr.org/blog/2023-03-18-update-on-recent-evals/#:~:text=Before%20replying%20the,provides%20the%20results.">made up a story</a> that convinced a human to solve a CAPTCHA for it:</p>
@@ -74,55 +67,37 @@ ai_facts = [
     {
         'id': 'card4',
         'title': '4) Autonomous killer drones are already being deployed in conflicts such as the Ukraine war.',
-        #'title': '4) Drones are killing people autonomously in Ukraine.',
-        #'title': '4) Autonomous killer drones are used in wars.',        
         'content': """
-<p>Unlike <a target="_blank" href="https://www.newyorker.com/magazine/2022/05/16/the-turkish-drone-that-changed-the-nature-of-warfare">traditional drones</a> used since the 1990s, Lethal Autonomous Weapons (LAWs), or “<a target="_blank" href="https://www.hrw.org/news/2024/12/05/killer-robots-un-vote-should-spur-treaty-negotiations">killer robots</a>”, once activated, select and attack targets <a target="_blank" href="https://lieber.westpoint.edu/future-warfare-national-positions-governance-lethal-autonomous-weapons-systems/#:~:text=The%20International%20Committee%20of%20the,%E2%80%9D">without further human intervention</a>.  See this promotional video:</p>
+<p>Unlike traditional drones used since the 1990s, Lethal Autonomous Weapons (LAWs), or “<a target="_blank" href="https://www.hrw.org/news/2024/12/05/killer-robots-un-vote-should-spur-treaty-negotiations">killer robots</a>”, once activated, select and attack targets <a target="_blank" href="https://lieber.westpoint.edu/future-warfare-national-positions-governance-lethal-autonomous-weapons-systems/#:~:text=The%20International%20Committee,without%20human%20intervention.%E2%80%9D">without further human intervention</a>.  See this promotional video:</p>
 
 <div class="embed-responsive embed-responsive-16by9 mb-3">
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2HxckRgetW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-<p>The first death from a LAW likely occurred in 2020 <a target="_blank" href="https://www.foxnews.com/world/killer-drone-hunted-down-a-human-target-without-being-told-to">in Libya</a>.  Most of the deaths in the Ukraine war are from drones, which <a target="_blank" href="https://www.politico.com/news/magazine/2025/08/27/ukraine-drones-war-russia-00514712#:~:text=The%20biggest%20promise,coming%20months.">often use AI</a> to autonomously track and kill targets.</p>
+<p>The first LAW death likely occurred in 2020 <a target="_blank" href="https://www.foxnews.com/world/killer-drone-hunted-down-a-human-target-without-being-told-to">in Libya</a>.  Most of the deaths in the Ukraine war are from drones that <a target="_blank" href="https://www.politico.com/news/magazine/2025/08/27/ukraine-drones-war-russia-00514712#:~:text=The%20biggest%20promise,coming%20months.">often</a><a target="_blank" href="https://www.youtube.com/watch?v=Km1AjorOKb0">autonomously</a> track and kill targets using AI.</p>
 
-<p>Tech companies such as Palantir are also working to bring AI into <a target="_blank" href="https://defence.ai/industry-news/palantir-aip-defense/#:~:text=During%20the%20demonstration%2C%20the%20software,the%20enemy%E2%80%99s%20communication%20hubs%20using">military decision-making</a> and targeting.  In 2025, the US Defence Department gave contracts of up to <a target="_blank" href="https://www.defensenews.com/pentagon/2025/07/15/pentagon-taps-four-commercial-tech-firms-to-expand-military-use-of-ai/#:~:text=The%20Pentagon%20announced%20Monday%20it,Chief%20Digital%20and%20AI%20Office">$200 million</a> to Google, xAI, Anthropic and OpenAI for military use of AI.  <a target="_blank" href="https://www.pearlcohen.com/google-removes-restrictions-on-ai-for-weapons-and-surveillance/#:~:text=executives%20argue%20that%20companies%20based,allied%20militaries%2C%20like%20the%20IDF">Google</a> and <a target="_blank" href="https://techcrunch.com/2024/01/12/openai-changes-policy-to-allow-military-applications/">OpenAI</a> quietly revised their AI principles to allow such work.</p>
+<p>Tech companies such as Palantir want to use AI for military decision-making and targeting.  In 2025, the US Defence Department gave AI contracts of up to <a target="_blank" href="https://www.defensenews.com/pentagon/2025/07/15/pentagon-taps-four-commercial-tech-firms-to-expand-military-use-of-ai/#:~:text=The%20Pentagon%20announced%20Monday%20it,Chief%20Digital%20and%20AI%20Office">$200 million</a> to Google, xAI, Anthropic and OpenAI.</p>
 
 <p>Experts have <a target="_blank" href="https://www.youtube.com/watch?v=HipTO_7mUOw">advocated for a ban</a> on LAWs <a target="_blank" href="https://futureoflife.org/open-letter/open-letter-autonomous-weapons-ai-robotics/">for over a decade</a>, but progress at the UN has been thwarted by <a target="_blank" href="https://www.asil.org/insights/volume/29/issue/1">a small minority of states</a> resisting consensus.</p>
 """
     },
     {
         'id': 'card5',
-        #'title': 'AIs trained using 1,000,000,000x more computer power than in 2012 can do vastly more',
-		#'title': 'AI is trained using 1,000,000,000x more computer power than it was in 2012 and can do vastly more',
-        #'title': '3) Since 2012, AI systems are trained using 1,000,000,000 times more computer power and are much better',
-        #'title': '3) Since 2012, AI got vastly better from being trained using 1,000,000,000 times more computer power',
-        #'title': 'Since 2012, training an AI uses 1,000,000,000x more computer hardware and produces ',
-        #'title':'3) The amount of computer power used to train AIs is 1,000,000,000 times larger than it was in 2012.',
-        #'title':'3) The amount of computer power used to train a big AI is 1,000,000,000 times larger than it was in 2012, driving rapid progress and record valuations.',
         'title': '5) AI computing power, investment, and capabilities are all scaling rapidly.',
-        #'title':'5) The amount of computer power used to train a large AI is 1,000,000,000 times higher since 2012, driving rapid progress and record valuations.',
         'content': """
 <p><a target="_blank" href="https://en.wikipedia.org/wiki/AI_boom#:~:text=In%202012%2C%20a,the%20tech%20industry.">Recent rapid progress in AI</a> is largely driven by scaling up “deep learning” 1,000,000,000 times using NVIDIA computer chips.  NVIDIA is now the most valuable company in the world.</p>
  
-<p><img src="static/img/sp500.png" alt="NVIDIA" class="img-fluid" /></p>
+<p class="text-center"><img src="static/img/sp500.png" alt="NVIDIA" class="img-fluid" style="width: 80%;" /></p>
 
 <p>Tests designed to measure AI progress over time are often quickly aced, <a target="_blank" href="https://www.vox.com/future-perfect/460222/ai-forecasting-tournament-superforecaster-expert-tetlock#:~:text=Both%20the%20AI,from%20domain%20experts.%E2%80%9D">surprising experts</a>.  Recent tests involve <a target="_blank" href="https://epoch.ai/benchmarks/gpqa-diamond">PhD-level</a> knowledge and reasoning, or <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">programming tasks that take hours</a>.</p>
 
 
-<p><img src="static/img/ai-tasks.png" alt="AI Task Timelines" class="img-fluid" /></p>
+<p class="text-center"><a target="_blank" href="static/img/ai-tasks.png"><img src="static/img/ai-tasks.png" alt="AI Task Timelines" class="img-fluid" style="width: 80%;" /></a></p>
 
 """
     },
     {
         'id': 'card6',
-        #'title': 'AI companies want to build “superintelligent” AIs smart enough to take over the world, while admitting they don’t know how to control them.', 
-        #AI companies are trying to build AI smarter than people, despite not knowing how to control AI even at today’s levels.
-        #'title': '6) AI companies racing to build ‘superintelligent’ AIs far surpassing human capacities admit they have no plan to control these.',
-        #'title': '6) AI companies are dashing to build ‘superintelligent’ AIs far surpassing human capacities, while admitting that how to prevent catastrophe from these is an open question.',
-        #'title': '6) AI companies dashing to build ‘superintelligent’ AIs far surpassing human capacities admit that preventing catastrophe from these is an open question.',
-        #'title': '6) AI companies are building ‘superintelligent’ AIs far surpassing human capacities admit that preventing catastrophe from these is an open question.',
-        #'title': '6) AI companies want to build ‘superintelligent’ AIs more competent than any human, while admitting they don’t know how to control them.',
-        #'title': 'AI companies want to build \'superintelligent\' AIs they admit they don\'t know how to control',
         'title': '6) AI companies want to build \"superintelligent\" AIs, while admitting they don\'t know how to control them.',
         'content': """
 <p>Meta CEO <a target="_blank" href="https://www.meta.com/superintelligence/">Mark Zuckerberg</a> and OpenAI CEO <a target="_blank" href="https://blog.samaltman.com/the-gentle-singularity">Sam Altman</a> say their companies intend to build "superintelligence"—AI far smarter than any human. <a target="_blank" href="https://deepmind.google/discover/blog/taking-a-responsible-path-to-agi/">Google DeepMind</a> and other AI companies are also working toward human-level or superhuman AI.</p>
@@ -143,7 +118,6 @@ ai_facts = [
     {
         'id': 'card7',
         'title': '7) AI is already displacing workers.  Further advances could cause record unemployment.',
-        #'title': 'Human-level AI could cause record unemployment',
         'content': """
 <p>According to the <a target="_blank" href="https://www.gov.uk/government/publications/international-ai-safety-report-2025/international-ai-safety-report-2025#systemic-risks:~:text=In%20potential%20future%20scenarios%20with%20general%2Dpurpose%20AI%20that%20outperforms%20humans%20on%20many%20complex%20tasks%2C%20the%20labour%20market%20impacts%20would%20likely%20be%20profound.">International AI Safety Report</a>, “with general-purpose AI that outperforms humans on many complex tasks, the labour market impacts would likely be profound”.  Researchers found entry-level jobs are already affected in sectors such as customer service, accounting, software development, and administration.</p>
 
@@ -153,16 +127,13 @@ ai_facts = [
 
 
 <div class="embed-responsive embed-responsive-16by9 mb-3">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NWxHOrn8-rs?si=OImMU-q_8pczIOBz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d6lDZpvHAoo?si=0_jd6NE80BKycmZC&amp;start=523" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 """
     },
     {
         'id': 'card8',
-        #'title': '4) In tests, AIs act to mislead people and thwart human control.',
-        #'title': 'AI systems attempt to deceive and manipulate humans without being specifically trained to do this',
-        #'title': '3) In the US, there is no legal requirement to test AIs before public release, and AI interests plan to spend $100m to keep it that way.',
         'title': '8) US law does not require companies to test AIs before releasing them.',
         'content': """
 <p>There is <a target="_blank" href="https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/">strong public support</a> for AI regulation in the US.  But AI interests plan to <a target="_blank" href="https://newsletter.safe.ai/p/ai-safety-newsletter-62-big-tech?open=false#%C2%A7big-tech-launches-million-pro-ai-super-pac">spend $100m</a> to fight it.</p>
