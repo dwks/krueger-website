@@ -98,7 +98,7 @@
                 top: calc(4 * 8em + 3 * 1rem + 1rem);
                 left: 0;
                 right: 0;
-                z-index: 10;
+                z-index: 1;
                 margin-top: 0;
             }
         }
@@ -109,14 +109,20 @@
             }
         }
         
-        /* Disable take action column on desktop where detail column is visible */
+        /* Ensure both take action and detail column links work on desktop */
         @media (min-width: 992px) {
             .take-action-column {
-                pointer-events: none;
+                pointer-events: auto;
             }
             .take-action-link {
-                opacity: 0.5;
-                cursor: default;
+                pointer-events: auto;
+                cursor: pointer;
+            }
+            /* Make sure detail column links are clickable even when overlapped */
+            #detailed-content a {
+                pointer-events: auto;
+                position: relative;
+                z-index: 10;
             }
         }
 
@@ -129,6 +135,8 @@
             /* Detail column height = 4 cards + 3 gaps + padding */
             .detail-column {
                 height: calc(4 * 7em + 3 * 1rem + 6em) !important;
+                position: relative;
+                z-index: 5;
             }
         }
         
@@ -140,6 +148,8 @@
             /* Detail column height = 4 cards + 3 gaps + padding */
             .detail-column {
                 height: calc(4 * 8em + 3 * 1rem + 6em) !important;
+                position: relative;
+                z-index: 5;
             }
         }
         
