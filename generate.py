@@ -54,7 +54,7 @@ ai_facts = [
         'id': 'card3',
         'title': '3) In tests, AIs act to mislead people and thwart human control.',
         'content': """
-<p>AIs behavior can be <a target="_blank" href="https://www.lesswrong.com/posts/YgAKhkBdgeTCn6P53/ai-deception-a-survey-of-examples-risks-and-potential">deceptive</a> or manipulative. For instance, in safety testing, an AI <a target="_blank" href="https://metr.org/blog/2023-03-18-update-on-recent-evals/#:~:text=Before%20replying%20the,provides%20the%20results.">made up a story</a> that convinced a human to solve a CAPTCHA for it:</p>
+<p>AIs behavior can be deceptive or manipulative. For instance, in safety testing, an AI <a target="_blank" href="https://metr.org/blog/2023-03-18-update-on-recent-evals/#:~:text=Before%20replying%20the,provides%20the%20results.">made up a story</a> that convinced a human to solve a CAPTCHA for it:</p>
 <p><img src="static/img/captcha.png" alt="CAPTCHA" class="img-fluid" /></p>
 
 <p>In other tests, AIs <a target="_blank" href="https://arxiv.org/abs/2412.14093">misrepresented their goals</a>, <a target="_blank" href="https://palisaderesearch.org/blog/shutdown-resistance">disabled shutdown mechanisms</a>, and <a target="_blank" href="https://www.anthropic.com/research/agentic-misalignment">disobeyed direct instructions</a> in order to <a target="_blank" href="https://www.youtube.com/watch?v=xIqtVkMXc8o">avoid being shut down</a> or modified.  These tests use the same AIs that are deployed to users, but place them in contrived scenarios.</p>
@@ -86,7 +86,7 @@ ai_facts = [
         'id': 'card5',
         'title': '5) AI computing power, investment, and capabilities are all scaling rapidly.',
         'content': """
-<p><a target="_blank" href="https://en.wikipedia.org/wiki/AI_boom#:~:text=In%202012%2C%20a,the%20tech%20industry.">Recent rapid progress in AI</a> is largely driven by scaling up “deep learning” 1,000,000,000 times using NVIDIA computer chips.  NVIDIA is now the most valuable company in the world.</p>
+<p><a target="_blank" href="https://en.wikipedia.org/wiki/AI_boom#:~:text=In%202012%2C%20a,the%20tech%20industry.">Recent rapid progress in AI</a> is largely driven by <a target="_blank" href="https://ourworldindata.org/grapher/exponential-growth-of-computation-in-the-training-of-notable-ai-systems/">scaling up</a> “deep learning” 1,000,000,000 times using NVIDIA computer chips.  NVIDIA is now the most valuable company in the world.</p>
  
 <p class="text-center"><img src="static/img/sp500.png" alt="NVIDIA" class="img-fluid" style="width: 80%;" /></p>
 
