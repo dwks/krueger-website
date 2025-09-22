@@ -61,7 +61,7 @@ ai_facts = [
 
 <p>Nonetheless, AIs have misled users in significant ways, such as <a target="_blank" href="https://www.reuters.com/investigates/special-report/meta-ai-chatbot-death/">pretending to be a real person</a> and inviting a user to a physical address.</p>
  
-<p>Beyond manipulating individuals, advanced AI could steer public conversation. 79% of AI researchers <a target="_blank" href="https://arxiv.org/pdf/2401.02843v1">said</a> the possibility of AI manipulating large-scale public opinion deserves substantial or extreme concern.</p>
+<p>Beyond manipulating individuals, advanced AI could steer public conversation. 79% of AI researchers <a target="_blank" href="https://arxiv.org/html/2401.02843v1">said</a> the possibility of AI manipulating large-scale public opinion deserves substantial or extreme concern.</p>
 
 """
     },
@@ -120,15 +120,14 @@ ai_facts = [
         'id': 'card7',
         'title': '7) AI is already displacing workers.  Further advances could cause record unemployment.',
         'content': """
-<p>According to the <a target="_blank" href="https://www.gov.uk/government/publications/international-ai-safety-report-2025/international-ai-safety-report-2025#systemic-risks:~:text=In%20potential%20future%20scenarios%20with%20general%2Dpurpose%20AI%20that%20outperforms%20humans%20on%20many%20complex%20tasks%2C%20the%20labour%20market%20impacts%20would%20likely%20be%20profound.">International AI Safety Report</a>, “with general-purpose AI that outperforms humans on many complex tasks, the labour market impacts would likely be profound”.  Researchers found entry-level jobs are already affected in sectors such as customer service, accounting, and software development.</p>
+<p>According to the <a target="_blank" href="https://www.gov.uk/government/publications/international-ai-safety-report-2025/international-ai-safety-report-2025#systemic-risks:~:text=In%20potential%20future%20scenarios%20with%20general%2Dpurpose%20AI%20that%20outperforms%20humans%20on%20many%20complex%20tasks%2C%20the%20labour%20market%20impacts%20would%20likely%20be%20profound.">International AI Safety Report</a>, “with general-purpose AI that outperforms humans on many complex tasks, the labour market impacts would likely be profound”.  Researchers are already <a target="_blank" href="https://www.stlouisfed.org/on-the-economy/2025/aug/is-ai-contributing-unemployment-evidence-occupational-variation">seeing effects</a> in sectors such as accounting, software development, and administration, especially for <a target="_blank" href="https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/">entry-level jobs</a>.</p>
 
 <p class="text-center"><img src="static/img/headcount.png" alt="Dario Amodei" class="img-fluid" style="width: 80%;" /></p>
 
-<p>Anthropic CEO Dario Amodei <a target="_blank" href="https://www.youtube.com/watch?v=NWxHOrn8-rs">warns</a> that AI could cause 10-20% unemployment in 1-5 years.</p>
-
+<p>CEOs are <a target="_blank" href="https://www.wsj.com/tech/ai/ai-white-collar-job-loss-b9856259">warning</a> that AI could soon cause mass unemployment, e.g. 10-20% in 1-5 years.</p>
 
 <div class="embed-responsive embed-responsive-16by9 mb-3">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d6lDZpvHAoo?si=0_jd6NE80BKycmZC&amp;start=523" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NWxHOrn8-rs?si=GBMYdge76ZrtdEkd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 """
