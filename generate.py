@@ -31,7 +31,7 @@ ai_facts = [
 </div>
 
 
-<p>On average, AI researchers believe there’s a <a target="_blank" href="https://arxiv.org/html/2401.02843#:~:text=Figure%2012%3A,2023%2C%20n%3D655"><b>10-20% chance</b></a> of extremely bad, extinction-level outcomes.</p>
+<p>On average, <a target="_blank" href="https://arxiv.org/html/2401.02843#:~:text=Figure%2012%3A,2023%2C%20n%3D655">AI researchers believe</a> there’s a <b>10-20% chance</b> of extremely bad, extinction-level outcomes.</p>
 """
     },
     {
