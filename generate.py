@@ -31,7 +31,7 @@ ai_facts = [
 </div>
 
 
-<p>On average, AI researchers believe there’s a <b>10-20% chance</b> of extremely bad, extinction-level outcomes.</p>
+<p>On average, AI researchers believe there’s a <a target="_blank" href="https://arxiv.org/html/2401.02843#:~:text=Figure%2012%3A,2023%2C%20n%3D655"><b>10-20% chance</b></a> of extremely bad, extinction-level outcomes.</p>
 """
     },
     {
@@ -52,7 +52,7 @@ ai_facts = [
     },
     {
         'id': 'card3',
-        'title': '3) In tests, AIs act to mislead people and thwart human control.',
+        'title': '3) In tests, AI systems act to mislead people and thwart human control.',
         'content': """
 <p>AIs behavior can be deceptive or manipulative. For instance, in safety testing, an AI <a target="_blank" href="https://metr.org/blog/2023-03-18-update-on-recent-evals/#:~:text=Before%20replying%20the,provides%20the%20results.">made up a story</a> that convinced a human to solve a CAPTCHA for it:</p>
 <p><img src="static/img/captcha.png" alt="CAPTCHA" class="img-fluid" /></p>
@@ -61,7 +61,7 @@ ai_facts = [
 
 <p>Nonetheless, AIs have misled users in significant ways, such as <a target="_blank" href="https://www.reuters.com/investigates/special-report/meta-ai-chatbot-death/">pretending to be a real person</a> and inviting a user to a physical address.</p>
  
-<p>Beyond manipulating individuals, advanced AI could steer public conversation. 79% of AI researchers <a target="_blank" href="https://arxiv.org/html/2401.02843v1">said</a> the possibility of AI manipulating large-scale public opinion deserves substantial or extreme concern.</p>
+<p>Beyond manipulating individuals, advanced AI could steer public conversation. 79% of AI researchers <a target="_blank" href="https://arxiv.org/html/2401.02843#:~:text=Figure%209%3A,least%20extreme%20concern">said</a> the possibility of AI manipulating large-scale public opinion deserves substantial or extreme concern.</p>
 
 """
     },
@@ -75,7 +75,7 @@ ai_facts = [
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2HxckRgetW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-<p>The first LAW death likely occurred in 2020 <a target="_blank" href="https://www.foxnews.com/world/killer-drone-hunted-down-a-human-target-without-being-told-to">in Libya</a>.  Most of the deaths in the Ukraine war are from drones that <a target="_blank" href="https://www.politico.com/news/magazine/2025/08/27/ukraine-drones-war-russia-00514712#:~:text=The%20biggest%20promise,coming%20months.">often</a><a target="_blank" href="https://www.youtube.com/watch?v=Km1AjorOKb0">autonomously</a> track and kill targets using AI.</p>
+<p>The first LAW death likely occurred in 2020 <a target="_blank" href="https://www.foxnews.com/world/killer-drone-hunted-down-a-human-target-without-being-told-to">in Libya</a>.  Most of the deaths in the Ukraine war are from drones that <a target="_blank" href="https://www.politico.com/news/magazine/2025/08/27/ukraine-drones-war-russia-00514712#:~:text=The%20biggest%20promise,coming%20months.">often</a> <a target="_blank" href="https://www.youtube.com/watch?v=Km1AjorOKb0">autonomously</a> track and kill targets using AI.</p>
 
 <p>Tech companies such as Palantir want to use AI for military decision-making and targeting.  In 2025, the US Defence Department gave AI contracts of up to <a target="_blank" href="https://www.defensenews.com/pentagon/2025/07/15/pentagon-taps-four-commercial-tech-firms-to-expand-military-use-of-ai/#:~:text=The%20Pentagon%20announced%20Monday%20it,Chief%20Digital%20and%20AI%20Office">$200 million</a> to Google, xAI, Anthropic and OpenAI.</p>
 
@@ -99,13 +99,13 @@ ai_facts = [
     },
     {
         'id': 'card6',
-        'title': '6) AI companies want to build \"superintelligent\" AIs, while admitting they don\'t know how to control them.',
+        'title': '6) AI companies want to build \"superintelligent\" AI systems, while admitting they don\'t know how to control them.',
         'content': """
 <p>Meta CEO <a target="_blank" href="https://www.meta.com/superintelligence/">Mark Zuckerberg</a> and OpenAI CEO <a target="_blank" href="https://blog.samaltman.com/the-gentle-singularity">Sam Altman</a> say their companies intend to build "superintelligence"—AI far smarter than any human. <a target="_blank" href="https://deepmind.google/discover/blog/taking-a-responsible-path-to-agi/">Google DeepMind</a> and other AI companies are also working toward human-level or superhuman AI.</p>
 
 <p>Meanwhile OpenAI <a target="_blank" href="https://openai.com/index/introducing-superalignment/">says</a> breakthroughs are needed to control AI much smarter than us; DeepMind <a target="_blank" href="https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/evaluating-potential-cybersecurity-threats-of-advanced-ai/An_Approach_to_Technical_AGI_Safety_Apr_2025.pdf">agrees</a> "there remain many open research problems". <a href="https://www.anthropic.com/news/core-views-on-ai-safety">Anthropic</a> "aren’t confident it will go well".</p>
 
-<p>In fact, CEOs of these three companies signed <a href="https://safe.ai/work/statement-on-ai-risk">statement</a> that AI poses a serious risk of human extinction. <a target="_blank" href="https://www.businessinsider.com/elon-musk-20-percent-chance-ai-destroys-humanity-2024-3#:~:text=%22I%20think%20there%27s,the%20negative%20scenario.%22">Elon Musk</a>, xAI CEO, also says “It's about 10% or 20% [that AI destroys humanity]." Dario Amodei says 25% “<a target="_blank" href="https://x.com/i/status/1968387815726891268">things go really, really badly</a>".</p>
+<p>In fact, CEOs of these three companies signed a <a href="https://safe.ai/work/statement-on-ai-risk">statement</a> that AI poses a serious risk of human extinction. <a target="_blank" href="https://www.businessinsider.com/elon-musk-20-percent-chance-ai-destroys-humanity-2024-3#:~:text=%22I%20think%20there%27s,the%20negative%20scenario.%22">Elon Musk</a>, xAI CEO, also says “It's about 10% or 20% [that AI destroys humanity]." Dario Amodei says 25% “<a target="_blank" href="https://x.com/i/status/1968387815726891268">things go really, really badly</a>".</p>
 
 
 <p>OpenAI CEO <a target="_blank" href="https://www.youtube.com/clip/UgkxSvRn5lP0wE7RpQhVZjUZpW7hmYFuF1bR?si=q9_LpVv3Ff2d7nbB">Sam Altman in 2015</a>:<br /></p>
@@ -118,7 +118,7 @@ ai_facts = [
     },
     {
         'id': 'card7',
-        'title': '7) AI is already displacing workers.  Further advances could cause record unemployment.',
+        'title': '7) AI is already displacing workers. Future AI could cause record unemployment.',
         'content': """
 <p>According to the <a target="_blank" href="https://www.gov.uk/government/publications/international-ai-safety-report-2025/international-ai-safety-report-2025#systemic-risks:~:text=In%20potential%20future%20scenarios%20with%20general%2Dpurpose%20AI%20that%20outperforms%20humans%20on%20many%20complex%20tasks%2C%20the%20labour%20market%20impacts%20would%20likely%20be%20profound.">International AI Safety Report</a>, “with general-purpose AI that outperforms humans on many complex tasks, the labour market impacts would likely be profound”.  Researchers are already <a target="_blank" href="https://www.stlouisfed.org/on-the-economy/2025/aug/is-ai-contributing-unemployment-evidence-occupational-variation">seeing effects</a> in sectors such as accounting, software development, and administration, especially for <a target="_blank" href="https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/">entry-level jobs</a>.</p>
 
@@ -134,7 +134,7 @@ ai_facts = [
     },
     {
         'id': 'card8',
-        'title': '8) US law does not require companies to test AIs before releasing them.',
+        'title': '8) US law does not require companies to test AI systems before releasing them.',
         'content': """
 <p>There is <a target="_blank" href="https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/">strong public support</a> for AI regulation in the US.  But AI interests plan to <a target="_blank" href="https://newsletter.safe.ai/p/ai-safety-newsletter-62-big-tech?open=false#%C2%A7big-tech-launches-million-pro-ai-super-pac">spend $100m</a> to fight it.</p>
 

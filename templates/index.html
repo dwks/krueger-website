@@ -92,10 +92,10 @@
             margin-top: 1rem;
         }
         
-        @media (min-width: 992px) {
+        @media (min-width: 992px) and (max-width: 1399.98px) {
             .action-button-row {
                 position: absolute;
-                top: calc(4 * 8em + 3 * 1rem + 1rem);
+                top: calc(4 * 9em + 3 * 1rem + 1rem);
                 left: 0;
                 right: 0;
                 z-index: 1;
@@ -105,7 +105,12 @@
         
         @media (min-width: 1400px) {
             .action-button-row {
+                position: absolute;
                 top: calc(4 * 8em + 3 * 1rem + 1rem);
+                left: 0;
+                right: 0;
+                z-index: 1;
+                margin-top: 0;
             }
         }
         
@@ -143,11 +148,11 @@
         @media (min-width: 992px) and (max-width: 1399.98px) {
             /* Large screens - medium height */
             .card[onclick*="handleCardClick"] {
-                height: 8em !important;
+                height: 9em !important;
             }
             /* Detail column height = 4 cards + 3 gaps + padding */
             .detail-column {
-                height: calc(4 * 8em + 3 * 1rem + 6em) !important;
+                height: calc(4 * 9em + 3 * 1rem + 6em) !important;
                 position: relative;
                 z-index: 5;
             }
@@ -157,7 +162,7 @@
             /* Small screens - unrestricted height */
             .card[onclick*="handleCardClick"] {
                 height: auto !important;
-                min-height: 8em;
+                min-height: 9em;
             }
         }
     </style>
