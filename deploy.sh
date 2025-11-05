@@ -1,3 +1,3 @@
-#!/bin/sh
+#!/bin/bash
 source env/bin/activate
-git pull && make && rm -rf /var/www/html && cp -ar dist /var/www/html
+git pull && make && sudo rm -rf /var/www/html && sudo cp -ar dist /var/www/html
