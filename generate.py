@@ -67,7 +67,7 @@ ai_facts = [
     },
     {
         'id': 'card4',
-        'title': '4) Autonomous killer drones are already being deployed in conflicts such as the Ukraine war.',
+        'title': '4) AI is being used to pilot killer drones in conflicts such as the Ukraine war.',
         'content': """
 <p>Unlike traditional drones used since the 1990s, Lethal Autonomous Weapons (LAWs), or “<a target="_blank" href="https://www.hrw.org/news/2024/12/05/killer-robots-un-vote-should-spur-treaty-negotiations">killer robots</a>”, once activated, select and attack targets <a target="_blank" href="https://lieber.westpoint.edu/future-warfare-national-positions-governance-lethal-autonomous-weapons-systems/#:~:text=The%20International%20Committee,without%20human%20intervention.%E2%80%9D">without further human intervention</a>.  See this promotional video:</p>
 
@@ -99,7 +99,7 @@ ai_facts = [
     },
     {
         'id': 'card6',
-        'title': '6) AI companies want to build \"superintelligent\" AI systems, while admitting they don\'t know how to control them.',
+        'title': '6) Companies want to build \"superintelligent\" AI, but don\'t know how to control it.',
         'content': """
 <p>Meta CEO <a target="_blank" href="https://www.meta.com/superintelligence/">Mark Zuckerberg</a> and OpenAI CEO <a target="_blank" href="https://blog.samaltman.com/the-gentle-singularity">Sam Altman</a> say their companies intend to build "superintelligence"—AI far smarter than any human. <a target="_blank" href="https://deepmind.google/discover/blog/taking-a-responsible-path-to-agi/">Google DeepMind</a> and other AI companies are also working toward human-level or superhuman AI.</p>
 

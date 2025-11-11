@@ -1,745 +1,935 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>8 Facts About AI</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Custom CSS to override primary color -->
     <style>
-        :root {
-            --bs-primary: #343a40 !important;
-            --bs-primary-rgb: 52, 58, 64 !important;
-        }
-        .text-primary {
-            color: #343a40 !important;
-        }
-        .bg-primary {
-            background-color: #343a40 !important;
-        }
-        .border-primary {
-            border-color: #343a40 !important;
-        }
-        
-        /* Responsive YouTube embed */
-        .embed-responsive {
-            position: relative;
-            display: block;
-            width: 100%;
-            padding: 0;
-            overflow: hidden;
-        }
-        
-        .embed-responsive::before {
-            display: block;
-            content: "";
-        }
-        
-        .embed-responsive .embed-responsive-item,
-        .embed-responsive iframe,
-        .embed-responsive embed,
-        .embed-responsive object,
-        .embed-responsive video {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-        
-        .embed-responsive-16by9::before {
-            padding-top: 56.25%;
-        }
-        
-        /* Smaller text for detailed content */
-        #detailed-content {
-            font-size: 0.875rem; /* 14px - smaller than default 16px */
-            line-height: 1.4;
-        }
+      :root {
+        --bs-primary: #343a40 !important;
+        --bs-primary-rgb: 52, 58, 64 !important;
+      }
 
-        /* Card animations and transitions */
-        .card[onclick*="handleCardClick"] {
-            transition: all 0.3s ease-in-out;
-        }
-        
-        .card[onclick*="handleCardClick"]:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
-        .card[onclick*="handleCardClick"].bg-primary {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        }
-        
-        #detailed-content {
-            transition: opacity 0.4s ease-in-out;
-        }
-        
-        .fade-in {
-            opacity: 1;
-        }
-        
-        .fade-out {
-            opacity: 0;
-        }
-        
-        /* Action button positioning */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      ::-webkit-scrollbar-track {
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+      }
+
+      .text-primary {
+        color: #343a40 !important;
+      }
+      .bg-primary {
+        background-color: #343a40 !important;
+      }
+      .border-primary {
+        border-color: #343a40 !important;
+      }
+
+      /* Responsive YouTube embed */
+      .embed-responsive {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .embed-responsive::before {
+        display: block;
+        content: "";
+      }
+
+      .embed-responsive .embed-responsive-item,
+      .embed-responsive iframe,
+      .embed-responsive embed,
+      .embed-responsive object,
+      .embed-responsive video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .embed-responsive-16by9::before {
+        padding-top: 56.25%;
+      }
+
+      /* Smaller text for detailed content */
+      #detailed-content {
+        font-size: 0.875rem; /* 14px - smaller than default 16px */
+        line-height: 1.4;
+      }
+
+      /* Card animations and transitions */
+      .card[onclick*="handleCardClick"] {
+        transition: all 0.3s ease-in-out;
+      }
+
+      .card[onclick*="handleCardClick"]:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .card[onclick*="handleCardClick"].bg-primary {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      #detailed-content {
+        transition: opacity 0.4s ease-in-out;
+      }
+
+      .fade-in {
+        opacity: 1;
+      }
+
+      .fade-out {
+        opacity: 0;
+      }
+
+      /* Action button positioning */
+      .action-button-row {
+        margin-top: 1rem;
+      }
+
+      @media (min-width: 992px) and (max-width: 1399.98px) {
         .action-button-row {
-            margin-top: 1rem;
+          position: absolute;
+          top: calc(4 * 9em + 3 * 1rem + 1rem);
+          left: 0;
+          right: 0;
+          z-index: 1;
+          margin-top: 0;
         }
-        
-        @media (min-width: 992px) and (max-width: 1399.98px) {
-            .action-button-row {
-                position: absolute;
-                top: calc(4 * 9em + 3 * 1rem + 1rem);
-                left: 0;
-                right: 0;
-                z-index: 1;
-                margin-top: 0;
-            }
-        }
-        
-        @media (min-width: 1400px) {
-            .action-button-row {
-                position: absolute;
-                top: calc(4 * 8em + 3 * 1rem + 1rem);
-                left: 0;
-                right: 0;
-                z-index: 1;
-                margin-top: 0;
-            }
-        }
-        
-        /* Ensure both take action and detail column links work on desktop */
-        @media (min-width: 992px) {
-            .take-action-column {
-                pointer-events: auto;
-            }
-            .take-action-link {
-                pointer-events: auto;
-                cursor: pointer;
-            }
-            /* Make sure detail column links are clickable even when overlapped */
-            #detailed-content a {
-                pointer-events: auto;
-                position: relative;
-                z-index: 10;
-            }
-        }
+      }
 
-        /* Responsive card heights */
-        @media (min-width: 1400px) {
-            /* Very wide screens - compact */
-            .card[onclick*="handleCardClick"] {
-                height: 8em !important;
-            }
-            /* Detail column height = 4 cards + 3 gaps + padding */
-            .detail-column {
-                height: calc(4 * 8em + 3 * 1rem + 6em) !important;
-                position: relative;
-                z-index: 5;
-            }
+      @media (min-width: 1400px) {
+        .action-button-row {
+          position: absolute;
+          top: calc(4 * 8em + 3 * 1rem + 1rem);
+          left: 0;
+          right: 0;
+          z-index: 1;
+          margin-top: 0;
         }
-        
-        @media (min-width: 992px) and (max-width: 1399.98px) {
-            /* Large screens - medium height */
-            .card[onclick*="handleCardClick"] {
-                height: 9em !important;
-            }
-            /* Detail column height = 4 cards + 3 gaps + padding */
-            .detail-column {
-                height: calc(4 * 9em + 3 * 1rem + 6em) !important;
-                position: relative;
-                z-index: 5;
-            }
+      }
+
+      /* Ensure both take action and detail column links work on desktop */
+      @media (min-width: 992px) {
+        .take-action-column {
+          pointer-events: auto;
         }
-        
-        @media (max-width: 991.98px) {
-            /* Small screens - unrestricted height */
-            .card[onclick*="handleCardClick"] {
-                height: auto !important;
-                min-height: 9em;
-            }
+        .take-action-link {
+          pointer-events: auto;
+          cursor: pointer;
         }
+        /* Make sure detail column links are clickable even when overlapped */
+        #detailed-content a {
+          pointer-events: auto;
+          position: relative;
+          z-index: 10;
+        }
+      }
+
+      /* Responsive card heights */
+      @media (min-width: 1400px) {
+        /* Very wide screens - compact */
+        .card[onclick*="handleCardClick"] {
+          height: 8em !important;
+        }
+        /* Detail column height = 4 cards + 3 gaps + padding */
+        .detail-column {
+          height: calc(4 * 8em + 3 * 1rem) !important;
+          position: relative;
+          z-index: 5;
+        }
+      }
+
+      @media (min-width: 992px) and (max-width: 1399.98px) {
+        /* Large screens - medium height */
+        .card[onclick*="handleCardClick"] {
+          height: 9em !important;
+        }
+        /* Detail column height = 4 cards + 3 gaps + padding */
+        .detail-column {
+          height: calc(4 * 9em + 3 * 1rem) !important;
+          position: relative;
+          z-index: 5;
+        }
+      }
+
+      @media (max-width: 991.98px) {
+        /* Small screens - unrestricted height */
+        .card[onclick*="handleCardClick"] {
+          height: auto !important;
+          min-height: 9em;
+        }
+      }
     </style>
     <!-- Google Fonts - Cormorant -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body class="bg-light" onload="initializePage()">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-light" onload="initializePage()">
     <div class="container mt-4">
-        <div class="row">
-            <div class="col-lg-8 col-md-12 text-center" id="topTitle">
-                <h1 class="display-4 fw-bold text-primary mb-4">8 Facts About AI</h1>
-            </div>
-            <div class="col-4 text-center d-none d-lg-block mt-3">
-                <div class="d-flex justify-content-center gap-3 align-items-center">
-                    <a href="#" onclick="shareOnTwitter()">
-                        <img src="static/img/x.png" alt="Share on X" width="32" height="32" style="cursor: pointer;">
-                    </a>
-                    <a href="#" onclick="shareOnFacebook()">
-                        <img src="static/img/facebook.png" alt="Share on Facebook" width="32" height="32" style="cursor: pointer;">
-                    </a>
-                    <a href="#" onclick="shareOnLinkedIn()">
-                        <img src="static/img/linkedin.png" alt="Share on LinkedIn" width="32" height="32" style="cursor: pointer;">
-                    </a>
-                    <a href="#" onclick="copyLink()">
-                        <i class="fas fa-link text-primary" style="font-size: 32px; cursor: pointer;"></i>
-                    </a>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-lg-8 col-md-12 text-center" id="topTitle">
+          <h1 class="display-4 fw-bold text-primary mb-4">8 Facts About AI</h1>
         </div>
+        <div class="col-4 text-center d-none d-lg-block mt-3">
+          <div class="d-flex justify-content-center gap-3 align-items-center">
+            <a href="#" onclick="shareOnTwitter()">
+              <img
+                src="static/img/x.png"
+                alt="Share on X"
+                width="32"
+                height="32"
+                style="cursor: pointer"
+              />
+            </a>
+            <a href="#" onclick="shareOnFacebook()">
+              <img
+                src="static/img/facebook.png"
+                alt="Share on Facebook"
+                width="32"
+                height="32"
+                style="cursor: pointer"
+              />
+            </a>
+            <a href="#" onclick="shareOnLinkedIn()">
+              <img
+                src="static/img/linkedin.png"
+                alt="Share on LinkedIn"
+                width="32"
+                height="32"
+                style="cursor: pointer"
+              />
+            </a>
+            <a href="#" onclick="copyLink()">
+              <i
+                class="fas fa-link text-primary"
+                style="font-size: 32px; cursor: pointer"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
-     <div class="container mt-2" style="position: relative;">
-         <!-- Mobile/Tablet Cards (current content) -->
-         <div class="mobile-cards">
-            <div class="row">
-                <!-- Column 1 - 4 small sections -->
-                <div class="col-lg-4 col-md-6">
-                    {% for fact in ai_facts[:4] %}
-                    <div class="card mb-3 border-3" onclick="handleCardClick('{{ fact.id }}')" style="cursor: pointer;">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 1.2em;">{{ fact.title }}</h5>
-                            <div id="{{ fact.id }}-content" class="card-text" style="display: none; cursor: default;" onclick="event.stopPropagation();">
-                                {{ fact.content | safe }}
-                            </div>
-                            <div id="{{ fact.id }}-toggle" class="text-muted small mt-2 d-lg-none">
-                                <em>Click to expand...</em>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
+    <div class="container mt-2" style="position: relative">
+      <!-- Mobile/Tablet Cards (current content) -->
+      <div class="mobile-cards">
+        <div class="row">
+          <!-- Column 1 - 4 small sections -->
+          <div class="col-lg-4 col-md-6">
+            {% for fact in ai_facts[:4] %}
+            <div
+              class="card mb-3 border-3"
+              onclick="handleCardClick('{{ fact.id }}')"
+              style="cursor: pointer"
+            >
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 1.2em">
+                  {{ fact.title }}
+                </h5>
+                <div
+                  id="{{ fact.id }}-content"
+                  class="card-text"
+                  style="display: none; cursor: default"
+                  onclick="event.stopPropagation();"
+                >
+                  {{ fact.content | safe }}
                 </div>
-
-                <!-- Column 2 - 4 more sections -->
-                <div class="col-lg-4 col-md-6">
-                    {% for fact in ai_facts[4:8] %}
-                    <div class="card mb-3 border-3" onclick="handleCardClick('{{ fact.id }}')" style="cursor: pointer;">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size: 1.2em;">{{ fact.title }}</h5>
-                            <div id="{{ fact.id }}-content" class="card-text" style="display: none; cursor: default;" onclick="event.stopPropagation();">
-                                {{ fact.content | safe }}
-                            </div>
-                            <div id="{{ fact.id }}-toggle" class="text-muted small mt-2 d-lg-none">
-                                <em>Click to expand...</em>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
+                <div
+                  id="{{ fact.id }}-toggle"
+                  class="text-muted small mt-2 d-lg-none"
+                >
+                  <em>Click to expand...</em>
                 </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
 
-                 <!-- Desktop Column 3 - Detail Display -->
-                 <div class="col-md-4 d-none d-lg-block detail-column">
-                     <div class="card border-3 h-100">
-                         <div class="card-body d-flex" style="height: 100%;">
-                             <div class="text-muted" id="detailed-content" style="overflow-y: auto; width: 100%">
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-         
-         <!-- Take Action Button - responsive positioning -->
+          <!-- Column 2 - 4 more sections -->
+          <div class="col-lg-4 col-md-6">
+            {% for fact in ai_facts[4:8] %}
+            <div
+              class="card mb-3 border-3"
+              onclick="handleCardClick('{{ fact.id }}')"
+              style="cursor: pointer"
+            >
+              <div class="card-body">
+                <h5 class="card-title" style="font-size: 1.2em">
+                  {{ fact.title }}
+                </h5>
+                <div
+                  id="{{ fact.id }}-content"
+                  class="card-text"
+                  style="display: none; cursor: default"
+                  onclick="event.stopPropagation();"
+                >
+                  {{ fact.content | safe }}
+                </div>
+                <div
+                  id="{{ fact.id }}-toggle"
+                  class="text-muted small mt-2 d-lg-none"
+                >
+                  <em>Click to expand...</em>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+          <!-- Desktop Column 3 - Detail Display -->
+          <div class="col-md-4 d-none d-lg-block detail-column">
+            <div class="card border-3 h-100">
+              <div class="card-body d-flex" style="height: 100%">
+                <div
+                  class="text-muted"
+                  id="detailed-content"
+                  style="overflow-y: auto; width: 100%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Take Action Button - responsive positioning 
          <div class="row action-button-row">
              <div class="col-12 col-lg-8 text-center">
                  <a href="#doSomethingPage" onclick="doSomething()"><h1 class="display-4 fw-bold">DO SOMETHING</h1></a>
              </div>
-         </div>
-     </div>
+         </div> -->
+    </div>
 
     <!-- Do Something Page (hidden initially) -->
-    <div id="doSomethingPage" class="container-fluid bg-light py-5" style="display: none; min-height: 100vh;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="text-center mb-5">
-                        <h5 class="display-5 fw-bold text-primary mb-4">We're starting a movement to stop the AI takeover.</h5>
-                        <!--<p class="lead">Now that you understand the risks, here's how you can help create a safer AI future.</p>-->
-                    </div>
-                    
-                    <div class="row g-4">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8">
-                            <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NX2YROCIJNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="col-md-2"></div>
-
-                        <!-- Action Card 1 -->
-                        <div class="col-md-12">
-                            <div class="text-center">
-                                <p class="lead">AI is not inevitable. Our families, friends, and future are at stake.<br />
-                                Don't let tech companies take our future.<br />
-                                Help us fight back.</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Action Card 5 - Mailing List -->
-                        <div class="col-md-8">
-                            <div class="card h-100 border-3">
-                                <div class="card-body text-center">
-                                    <p class="card-text lead">Subscribe to our mailing list to join our movement:</p>
-                                    <div class="d-flex justify-content-center mb-3">
-                                        <div class="input-group" style="max-width: 400px;">
-                                            <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" aria-label="Email address">
-                                            <button class="btn btn-primary" type="button" onclick="subscribeToMailingList()">
-                                                <i class="fas fa-paper-plane"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div id="subscriptionMessage" class="small text-muted"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-center take-action-column" style="min-height: 100%;">
-                            <div class="card h-100 border-3 w-100">
-                                <div class="card-body text-center d-flex align-items-center justify-content-center" style="height: 100%;">
-                                     <p class="card-text m-0 lead" id="takeActionText">Or, <a href="#takeActionText" onclick="takeAction()" class="take-action-link">take action now!</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2"></div>
-                    </div>
-                </div>
+    <div
+      id="doSomethingPage"
+      class="container-fluid bg-light py-5"
+      style="display: none; min-height: 100vh"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center mb-5">
+              <h5 class="display-5 fw-bold text-primary mb-4">
+                We're starting a movement to stop the AI takeover.
+              </h5>
+              <!--<p class="lead">Now that you understand the risks, here's how you can help create a safer AI future.</p>-->
             </div>
+
+            <div class="row g-4">
+              <div class="col-md-2"></div>
+              <div class="col-md-8">
+                <div class="embed-responsive embed-responsive-16by9 mb-3">
+                  <iframe
+                    class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/NX2YROCIJNQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <div class="col-md-2"></div>
+
+              <!-- Action Card 1 -->
+              <div class="col-md-12">
+                <div class="text-center">
+                  <p class="lead">
+                    AI is not inevitable. Our families, friends, and future are
+                    at stake.<br />
+                    Don't let tech companies take our future.<br />
+                    Help us fight back.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Action Card 5 - Mailing List -->
+              <div class="col-md-8">
+                <div class="card h-100 border-3">
+                  <div class="card-body text-center">
+                    <p class="card-text lead">
+                      Subscribe to our mailing list to join our movement:
+                    </p>
+                    <div class="d-flex justify-content-center mb-3">
+                      <div class="input-group" style="max-width: 400px">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="emailInput"
+                          placeholder="Enter your email"
+                          aria-label="Email address"
+                        />
+                        <button
+                          class="btn btn-primary"
+                          type="button"
+                          onclick="subscribeToMailingList()"
+                        >
+                          <i class="fas fa-paper-plane"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      id="subscriptionMessage"
+                      class="small text-muted"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-4 d-flex align-items-center take-action-column"
+                style="min-height: 100%"
+              >
+                <div class="card h-100 border-3 w-100">
+                  <div
+                    class="card-body text-center d-flex align-items-center justify-content-center"
+                    style="height: 100%"
+                  >
+                    <p class="card-text m-0 lead" id="takeActionText">
+                      Or,
+                      <a
+                        href="#takeActionText"
+                        onclick="takeAction()"
+                        class="take-action-link"
+                        >take action now!</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Take Action Page (hidden initially) -->
-    <div id="actionPage" class="container-fluid bg-light py-5" style="display: none; min-height: 50vh;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-8">
-                    <div class="text-center mb-5">
-                        <!-- Action Card 1 -->
-                        <div class="card border-3 w-100 w-lg-75 mx-auto">
-                            <div class="card-header">
-                                <h3 class="fw-bold text-primary" style="margin-bottom: 0 !important">
-                                    You can also take action now!
-                                </h3>
-                                <p class="lead">Follow these 3 steps to help</p>
-                            </div>
-
-
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <div class="row justify-content-around">
-                                        <div class="col-1" style="margin-top: auto; margin-bottom: auto; margin-right: 1em">
-                                            <img src="static/img/number-one.png" alt="Number 1" width="32" height="32" style="cursor: pointer" />
-                                        </div>
-                                        <div class="col-10 text-start">
-                                            Tell your friends -- show someone this website.
-                                            <br />
-                                            Or share this on social media.
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="row justify-content-around">
-                                        <div class="col-1" style="margin-top: auto; margin-bottom: auto; margin-right: 1em">
-                                            <img src="static/img/number-2.png" alt="Number 2" width="32" height="32" style="cursor: pointer"/>
-                                        </div>
-                                        <div class="col-10 text-start">
-                                            Call or write to your representative.
-                                            <br />
-                                            ControlAI has a <a target="_blank" href="https://controlai.com/take-action/world">template</a> and a tool for this.
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="row justify-content-around">
-                                        <div class="col-1" style="margin-top: auto; margin-bottom: auto; margin-right: 1em">
-                                            <img src="static/img/number-3.png" alt="Number 3" width="32" height="32" style="cursor: pointer" />
-                                        </div>
-                                        <div class="col-10 text-start">
-                                            Apply to be a volunteer!
-                                            <br />
-                                            (TODO: how?)
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <div
+      id="actionPage"
+      class="container-fluid bg-light py-5"
+      style="display: none; min-height: 50vh"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="text-center mb-5">
+              <!-- Action Card 1 -->
+              <div class="card border-3 w-100 w-lg-75 mx-auto">
+                <div class="card-header">
+                  <h3
+                    class="fw-bold text-primary"
+                    style="margin-bottom: 0 !important"
+                  >
+                    You can also take action now!
+                  </h3>
+                  <p class="lead">Follow these 3 steps to help</p>
                 </div>
+
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <div class="row justify-content-around">
+                      <div
+                        class="col-1"
+                        style="
+                          margin-top: auto;
+                          margin-bottom: auto;
+                          margin-right: 1em;
+                        "
+                      >
+                        <img
+                          src="static/img/number-one.png"
+                          alt="Number 1"
+                          width="32"
+                          height="32"
+                          style="cursor: pointer"
+                        />
+                      </div>
+                      <div class="col-10 text-start">
+                        Tell your friends -- show someone this website.
+                        <br />
+                        Or share this on social media.
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row justify-content-around">
+                      <div
+                        class="col-1"
+                        style="
+                          margin-top: auto;
+                          margin-bottom: auto;
+                          margin-right: 1em;
+                        "
+                      >
+                        <img
+                          src="static/img/number-2.png"
+                          alt="Number 2"
+                          width="32"
+                          height="32"
+                          style="cursor: pointer"
+                        />
+                      </div>
+                      <div class="col-10 text-start">
+                        Call or write to your representative.
+                        <br />
+                        ControlAI has a
+                        <a
+                          target="_blank"
+                          href="https://controlai.com/take-action/world"
+                          >template</a
+                        >
+                        and a tool for this.
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row justify-content-around">
+                      <div
+                        class="col-1"
+                        style="
+                          margin-top: auto;
+                          margin-bottom: auto;
+                          margin-right: 1em;
+                        "
+                      >
+                        <img
+                          src="static/img/number-3.png"
+                          alt="Number 3"
+                          width="32"
+                          height="32"
+                          style="cursor: pointer"
+                        />
+                      </div>
+                      <div class="col-10 text-start">
+                        Apply to be a volunteer!
+                        <br />
+                        (TODO: how?)
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
-
     <div class="container mt-3 d-lg-none">
-        <div class="row">
-            <div class="col-12 text-center mb-4">
-                <div class="d-flex justify-content-center gap-3 align-items-center">
-                    <a href="#" onclick="shareOnTwitter()">
-                        <img src="static/img/x.png" alt="Share on X" width="32" height="32" style="cursor: pointer;">
-                    </a>
-                    <a href="#" onclick="shareOnFacebook()">
-                        <img src="static/img/facebook.png" alt="Share on Facebook" width="32" height="32" style="cursor: pointer;">
-                    </a>
-                    <a href="#" onclick="shareOnLinkedIn()">
-                        <img src="static/img/linkedin.png" alt="Share on LinkedIn" width="32" height="32" style="cursor: pointer;">
-                    </a>
-                    <a href="#bottomCopyLink" onclick="copyLink()" id="bottomCopyLink">
-                        <i class="fas fa-link text-primary" style="font-size: 32px; cursor: pointer;"></i>
-                    </a>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <div class="d-flex justify-content-center gap-3 align-items-center">
+            <a href="#" onclick="shareOnTwitter()">
+              <img
+                src="static/img/x.png"
+                alt="Share on X"
+                width="32"
+                height="32"
+                style="cursor: pointer"
+              />
+            </a>
+            <a href="#" onclick="shareOnFacebook()">
+              <img
+                src="static/img/facebook.png"
+                alt="Share on Facebook"
+                width="32"
+                height="32"
+                style="cursor: pointer"
+              />
+            </a>
+            <a href="#" onclick="shareOnLinkedIn()">
+              <img
+                src="static/img/linkedin.png"
+                alt="Share on LinkedIn"
+                width="32"
+                height="32"
+                style="cursor: pointer"
+              />
+            </a>
+            <a href="#bottomCopyLink" onclick="copyLink()" id="bottomCopyLink">
+              <i
+                class="fas fa-link text-primary"
+                style="font-size: 32px; cursor: pointer"
+              ></i>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script>
-        // Track currently selected card for desktop
-        let selectedCardId = null;
+      // Track currently selected card for desktop
+      let selectedCardId = null;
 
-        // Unified content display function - detects mobile vs desktop
-        function handleCardClick(cardId) {
-            const isDesktop = window.innerWidth >= 992; // Bootstrap lg breakpoint
-            console.log(isDesktop);
-            
-            if (isDesktop) {
-                // Desktop behavior - show content in detailed area
-                useContent(cardId);
-                highlightSelectedCard(cardId);
-            } else {
-                // Mobile behavior - toggle expand/collapse
-                toggleCardContent(cardId);
-            }
-        }
+      // Unified content display function - detects mobile vs desktop
+      function handleCardClick(cardId) {
+          const isDesktop = window.innerWidth >= 992; // Bootstrap lg breakpoint
+          console.log(isDesktop);
 
-        // Highlight selected card on desktop
-        function highlightSelectedCard(cardId) {
-            const facts = {{ ai_facts | tojson }};
-            
-            // Remove highlight from all cards
-            facts.forEach(fact => {
-                const card = document.querySelector(`[onclick="handleCardClick('${fact.id}')"]`);
-                if (card) {
-                    card.classList.remove('bg-primary', 'text-white');
-                    card.classList.add('bg-white');
-                }
-            });
-            
-            // Add highlight to selected card
-            const selectedCard = document.querySelector(`[onclick="handleCardClick('${cardId}')"]`);
-            if (selectedCard) {
-                selectedCard.classList.remove('bg-white');
-                selectedCard.classList.add('bg-primary', 'text-white');
-                selectedCardId = cardId;
-            }
-        }
+          if (isDesktop) {
+              // Desktop behavior - show content in detailed area
+              useContent(cardId);
+              highlightSelectedCard(cardId);
+          } else {
+              // Mobile behavior - toggle expand/collapse
+              toggleCardContent(cardId);
+          }
+      }
 
-        // Collapse all mobile cards
-        function collapseAllMobileCards() {
-            const facts = {{ ai_facts | tojson }};
-            facts.forEach(fact => {
-                const content = document.getElementById(fact.id + '-content');
-                const toggle = document.getElementById(fact.id + '-toggle');
-                
-                if (content && toggle) {
-                    content.style.display = 'none';
-                    toggle.innerHTML = '<em>Click to expand...</em>';
-                }
-            });
-        }
+      // Highlight selected card on desktop
+      function highlightSelectedCard(cardId) {
+          const facts = {{ ai_facts | tojson }};
 
-        // Handle window resize - collapse mobile cards when switching to desktop
-        function handleWindowResize() {
-            const isDesktop = window.innerWidth >= 992;
-            
-            if (isDesktop) {
-                // If switching to desktop, collapse all mobile cards
-                collapseAllMobileCards();
-            } else {
-                // If switching to mobile, clear card selection
-                clearCardSelection();
-            }
-        }
+          // Remove highlight from all cards
+          facts.forEach(fact => {
+              const card = document.querySelector(`[onclick="handleCardClick('${fact.id}')"]`);
+              if (card) {
+                  card.classList.remove('bg-primary', 'text-white');
+                  card.classList.add('bg-white');
+              }
+          });
 
-        // Clear card selection (remove highlights)
-        function clearCardSelection() {
-            const facts = {{ ai_facts | tojson }};
-            
-            facts.forEach(fact => {
-                const card = document.querySelector(`[onclick="handleCardClick('${fact.id}')"]`);
-                if (card) {
-                    card.classList.remove('bg-primary', 'text-white');
-                    card.classList.add('bg-white');
-                }
-            });
-            
-            selectedCardId = null;
-        }
+          // Add highlight to selected card
+          const selectedCard = document.querySelector(`[onclick="handleCardClick('${cardId}')"]`);
+          if (selectedCard) {
+              selectedCard.classList.remove('bg-white');
+              selectedCard.classList.add('bg-primary', 'text-white');
+              selectedCardId = cardId;
+          }
+      }
 
-        // Add window resize listener
-        window.addEventListener('resize', handleWindowResize);
+      // Collapse all mobile cards
+      function collapseAllMobileCards() {
+          const facts = {{ ai_facts | tojson }};
+          facts.forEach(fact => {
+              const content = document.getElementById(fact.id + '-content');
+              const toggle = document.getElementById(fact.id + '-toggle');
 
-        // Initialize page on load
-        function initializePage() {
-            console.log('🚀 Page loaded successfully!');
-            
-            // Check if we're on desktop and select card1
-            const isDesktop = window.innerWidth >= 992;
-            if (isDesktop) {
-                // Desktop: select card1 and show its content
-                useContent('card1');
-                highlightSelectedCard('card1');
-            }
-            
-            // Add any other initialization code here
-            // For example: analytics, theme detection, etc.
-        }
+              if (content && toggle) {
+                  content.style.display = 'none';
+                  toggle.innerHTML = '<em>Click to expand...</em>';
+              }
+          });
+      }
 
-        // Mobile/Tablet content display function
-        function toggleCardContent(cardId) {
-            const content = document.getElementById(cardId + '-content');
-            const toggle = document.getElementById(cardId + '-toggle');
-            
-            if (content && toggle) {
-                if (content.style.display === 'none') {
-                    content.style.display = 'block';
-                    toggle.innerHTML = '<em>Click to collapse...</em>';
-                } else {
-                    content.style.display = 'none';
-                    toggle.innerHTML = '<em>Click to expand...</em>';
-                }
-            }
-        }
+      // Handle window resize - collapse mobile cards when switching to desktop
+      function handleWindowResize() {
+          const isDesktop = window.innerWidth >= 992;
 
-         function useContent(cardId) {
-             const content = document.getElementById(cardId + '-content');
-             const detailedContent = document.getElementById('detailed-content');
-             
-             if (content && detailedContent) {
-                 // Add fade out effect
-                 detailedContent.classList.add('fade-out');
-                 
-                 // Wait for fade out to complete, then update content and fade in
-                 setTimeout(() => {
-                     detailedContent.innerHTML = content.innerHTML;
-                     detailedContent.classList.remove('fade-out');
-                     detailedContent.classList.add('fade-in');
-                 }, 200); // Half of the 0.4s transition duration
-             }
-         }
+          if (isDesktop) {
+              // If switching to desktop, collapse all mobile cards
+              collapseAllMobileCards();
+          } else {
+              // If switching to mobile, clear card selection
+              clearCardSelection();
+          }
+      }
 
-        // Social Media Sharing Functions
-        function shareOnTwitter() {
-            const url = encodeURIComponent(window.location.href);
-            const text = encodeURIComponent("Check out these important facts about AI risks and safety!");
-            window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
-        }
+      // Clear card selection (remove highlights)
+      function clearCardSelection() {
+          const facts = {{ ai_facts | tojson }};
 
-        function shareOnFacebook() {
-            const url = encodeURIComponent(window.location.href);
-            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
-        }
+          facts.forEach(fact => {
+              const card = document.querySelector(`[onclick="handleCardClick('${fact.id}')"]`);
+              if (card) {
+                  card.classList.remove('bg-primary', 'text-white');
+                  card.classList.add('bg-white');
+              }
+          });
 
-        function shareOnLinkedIn() {
-            const url = encodeURIComponent(window.location.href);
-            const title = encodeURIComponent("8 Facts About AI - Important Information About AI Risks");
-            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`, '_blank');
-        }
+          selectedCardId = null;
+      }
 
-        function copyLink() {
-            const url = window.location.href;
-            const btn = event.target.closest('a');
-            const originalText = btn.innerHTML;
-            
-            // Try modern clipboard API first
-            if (navigator.clipboard && window.isSecureContext) {
-                navigator.clipboard.writeText(url).then(function() {
-                    showCopySuccess(btn, originalText);
-                }).catch(function() {
-                    // Fallback to legacy method
-                    fallbackCopyText(url, btn, originalText);
-                });
-            } else {
-                // Use legacy fallback method
-                fallbackCopyText(url, btn, originalText);
-            }
-        }
+      // Add window resize listener
+      window.addEventListener('resize', handleWindowResize);
 
-        // Fallback copy method for older browsers or non-secure contexts
-        function fallbackCopyText(text, btn, originalText) {
-            // Create a temporary textarea element
-            const textArea = document.createElement('textarea');
-            textArea.value = text;
-            textArea.style.position = 'fixed';
-            textArea.style.left = '-999999px';
-            textArea.style.top = '-999999px';
-            document.body.appendChild(textArea);
-            
-            try {
-                textArea.focus();
-                textArea.select();
-                const successful = document.execCommand('copy');
-                
-                if (successful) {
-                    showCopySuccess(btn, originalText);
-                } else {
-                    showCopyError(btn, originalText);
-                }
-            } catch (err) {
-                showCopyError(btn, originalText);
-            } finally {
-                document.body.removeChild(textArea);
-            }
-        }
+      // Initialize page on load
+      function initializePage() {
+          console.log('🚀 Page loaded successfully!');
 
-        // Show success feedback
-        function showCopySuccess(btn, originalText) {
-            btn.innerHTML = '<i class="fas fa-check"></i>';
-            btn.classList.add('text-success');
-            
-            setTimeout(function() {
-                btn.innerHTML = originalText;
-                btn.classList.remove('text-success');
-            }, 2000);
-        }
+          // Check if we're on desktop and select card1
+          const isDesktop = window.innerWidth >= 992;
+          if (isDesktop) {
+              // Desktop: select card1 and show its content
+              useContent('card1');
+              highlightSelectedCard('card1');
+          }
 
-        // Show error feedback
-        function showCopyError(btn, originalText) {
-            btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
-            btn.classList.add('text-danger');
-            
-            setTimeout(function() {
-                btn.innerHTML = originalText;
-                btn.classList.remove('text-danger');
-            }, 2000);
-        }
+          // Add any other initialization code here
+          // For example: analytics, theme detection, etc.
+      }
 
-        // Do Something function - shows Do Something page and scrolls to it
-        function doSomething() {
-            console.log("doing something")
-            // Show the Do Something page
-            const doSomethingPage = document.getElementById('doSomethingPage');
-            doSomethingPage.style.display = 'block';
-            
-            // Smooth scroll to the Do Something page
-            doSomethingPage.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+      // Mobile/Tablet content display function
+      function toggleCardContent(cardId) {
+          const content = document.getElementById(cardId + '-content');
+          const toggle = document.getElementById(cardId + '-toggle');
 
-        // Take Action function - shows action page and scrolls to it
-        function takeAction() {
-            // Show the action page
-            const actionPage = document.getElementById('actionPage');
-            actionPage.style.display = 'block';
-            
-            // Smooth scroll to the action page
-            actionPage.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+          if (content && toggle) {
+              if (content.style.display === 'none') {
+                  content.style.display = 'block';
+                  toggle.innerHTML = '<em>Click to collapse...</em>';
+              } else {
+                  content.style.display = 'none';
+                  toggle.innerHTML = '<em>Click to expand...</em>';
+              }
+          }
+      }
 
-        // Subscribe to mailing list function - Mailchimp integration
-        function subscribeToMailingList() {
-            const emailInput = document.getElementById('emailInput');
-            const messageDiv = document.getElementById('subscriptionMessage');
-            const email = emailInput.value.trim();
-            
-            // Basic email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            
-            if (!email) {
-                messageDiv.innerHTML = '<span class="text-danger">Please enter your email address.</span>';
-                return;
-            }
-            
-            if (!emailRegex.test(email)) {
-                messageDiv.innerHTML = '<span class="text-danger">Please enter a valid email address.</span>';
-                return;
-            }
-            
-            // Show loading message
-            messageDiv.innerHTML = '<span class="text-info">Subscribing...</span>';
-            
-            // Use Mailchimp's embedded form for one-click subscription
-            const MAILCHIMP_FORM_URL = '{{ mailing_list["form_url"] }}';
-            
-            if (!MAILCHIMP_FORM_URL || MAILCHIMP_FORM_URL === '') {
-                messageDiv.innerHTML = '<span class="text-danger">Mailing list not configured. Please contact the administrator.</span>';
-                return;
-            }
-            
-            // Create a hidden form and submit it to Mailchimp (one-click subscription)
-            const form = document.createElement('form');
-            form.method = 'POST';
-            form.action = MAILCHIMP_FORM_URL;
-            form.target = 'hidden_iframe'; // Submit to hidden iframe
-            
-            const emailField = document.createElement('input');
-            emailField.type = 'email';
-            emailField.name = 'EMAIL';
-            emailField.value = email;
-            
-            const submitButton = document.createElement('input');
-            submitButton.type = 'submit';
-            submitButton.style.display = 'none';
-            
-            form.appendChild(emailField);
-            form.appendChild(submitButton);
-            document.body.appendChild(form);
-            
-            // Create hidden iframe to receive the response
-            let iframe = document.getElementById('hidden_iframe');
-            if (!iframe) {
-                iframe = document.createElement('iframe');
-                iframe.id = 'hidden_iframe';
-                iframe.name = 'hidden_iframe';
-                iframe.style.display = 'none';
-                document.body.appendChild(iframe);
-            }
-            
-            // Submit the form
-            form.submit();
-            
-            // Clean up form
-            document.body.removeChild(form);
-            
-            // Show success message immediately
-            messageDiv.innerHTML = '<span class="text-success">✓ Successfully subscribed! Check your email for confirmation.</span>';
-            emailInput.value = '';
-            
-            // Hide success message after 5 seconds
-            setTimeout(() => {
-                messageDiv.innerHTML = '';
-            }, 5000);
+       function useContent(cardId) {
+           const content = document.getElementById(cardId + '-content');
+           const detailedContent = document.getElementById('detailed-content');
 
-            // Show third page
-            setTimeout(() => {
-                takeAction();
-            }, 1000);
-        }
-        
-        // Allow Enter key to submit email
-        document.addEventListener('DOMContentLoaded', function() {
-            const emailInput = document.getElementById('emailInput');
-            if (emailInput) {
-                emailInput.addEventListener('keypress', function(e) {
-                    if (e.key === 'Enter') {
-                        subscribeToMailingList();
-                    }
-                });
-            }
-        });
+           if (content && detailedContent) {
+               // Add fade out effect
+               detailedContent.classList.add('fade-out');
+
+               // Wait for fade out to complete, then update content and fade in
+               setTimeout(() => {
+                   detailedContent.innerHTML = content.innerHTML;
+                   detailedContent.classList.remove('fade-out');
+                   detailedContent.classList.add('fade-in');
+               }, 200); // Half of the 0.4s transition duration
+           }
+       }
+
+      // Social Media Sharing Functions
+      function shareOnTwitter() {
+          const url = encodeURIComponent(window.location.href);
+          const text = encodeURIComponent("Check out these important facts about AI risks and safety!");
+          window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+      }
+
+      function shareOnFacebook() {
+          const url = encodeURIComponent(window.location.href);
+          window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+      }
+
+      function shareOnLinkedIn() {
+          const url = encodeURIComponent(window.location.href);
+          const title = encodeURIComponent("8 Facts About AI - Important Information About AI Risks");
+          window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}`, '_blank');
+      }
+
+      function copyLink() {
+          const url = window.location.href;
+          const btn = event.target.closest('a');
+          const originalText = btn.innerHTML;
+
+          // Try modern clipboard API first
+          if (navigator.clipboard && window.isSecureContext) {
+              navigator.clipboard.writeText(url).then(function() {
+                  showCopySuccess(btn, originalText);
+              }).catch(function() {
+                  // Fallback to legacy method
+                  fallbackCopyText(url, btn, originalText);
+              });
+          } else {
+              // Use legacy fallback method
+              fallbackCopyText(url, btn, originalText);
+          }
+      }
+
+      // Fallback copy method for older browsers or non-secure contexts
+      function fallbackCopyText(text, btn, originalText) {
+          // Create a temporary textarea element
+          const textArea = document.createElement('textarea');
+          textArea.value = text;
+          textArea.style.position = 'fixed';
+          textArea.style.left = '-999999px';
+          textArea.style.top = '-999999px';
+          document.body.appendChild(textArea);
+
+          try {
+              textArea.focus();
+              textArea.select();
+              const successful = document.execCommand('copy');
+
+              if (successful) {
+                  showCopySuccess(btn, originalText);
+              } else {
+                  showCopyError(btn, originalText);
+              }
+          } catch (err) {
+              showCopyError(btn, originalText);
+          } finally {
+              document.body.removeChild(textArea);
+          }
+      }
+
+      // Show success feedback
+      function showCopySuccess(btn, originalText) {
+          btn.innerHTML = '<i class="fas fa-check"></i>';
+          btn.classList.add('text-success');
+
+          setTimeout(function() {
+              btn.innerHTML = originalText;
+              btn.classList.remove('text-success');
+          }, 2000);
+      }
+
+      // Show error feedback
+      function showCopyError(btn, originalText) {
+          btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+          btn.classList.add('text-danger');
+
+          setTimeout(function() {
+              btn.innerHTML = originalText;
+              btn.classList.remove('text-danger');
+          }, 2000);
+      }
+
+      // Do Something function - shows Do Something page and scrolls to it
+      function doSomething() {
+          console.log("doing something")
+          // Show the Do Something page
+          const doSomethingPage = document.getElementById('doSomethingPage');
+          doSomethingPage.style.display = 'block';
+
+          // Smooth scroll to the Do Something page
+          doSomethingPage.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+          });
+      }
+
+      // Take Action function - shows action page and scrolls to it
+      function takeAction() {
+          // Show the action page
+          const actionPage = document.getElementById('actionPage');
+          actionPage.style.display = 'block';
+
+          // Smooth scroll to the action page
+          actionPage.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+          });
+      }
+
+      // Subscribe to mailing list function - Mailchimp integration
+      function subscribeToMailingList() {
+          const emailInput = document.getElementById('emailInput');
+          const messageDiv = document.getElementById('subscriptionMessage');
+          const email = emailInput.value.trim();
+
+          // Basic email validation
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if (!email) {
+              messageDiv.innerHTML = '<span class="text-danger">Please enter your email address.</span>';
+              return;
+          }
+
+          if (!emailRegex.test(email)) {
+              messageDiv.innerHTML = '<span class="text-danger">Please enter a valid email address.</span>';
+              return;
+          }
+
+          // Show loading message
+          messageDiv.innerHTML = '<span class="text-info">Subscribing...</span>';
+
+          // Use Mailchimp's embedded form for one-click subscription
+          const MAILCHIMP_FORM_URL = '{{ mailing_list["form_url"] }}';
+
+          if (!MAILCHIMP_FORM_URL || MAILCHIMP_FORM_URL === '') {
+              messageDiv.innerHTML = '<span class="text-danger">Mailing list not configured. Please contact the administrator.</span>';
+              return;
+          }
+
+          // Create a hidden form and submit it to Mailchimp (one-click subscription)
+          const form = document.createElement('form');
+          form.method = 'POST';
+          form.action = MAILCHIMP_FORM_URL;
+          form.target = 'hidden_iframe'; // Submit to hidden iframe
+
+          const emailField = document.createElement('input');
+          emailField.type = 'email';
+          emailField.name = 'EMAIL';
+          emailField.value = email;
+
+          const submitButton = document.createElement('input');
+          submitButton.type = 'submit';
+          submitButton.style.display = 'none';
+
+          form.appendChild(emailField);
+          form.appendChild(submitButton);
+          document.body.appendChild(form);
+
+          // Create hidden iframe to receive the response
+          let iframe = document.getElementById('hidden_iframe');
+          if (!iframe) {
+              iframe = document.createElement('iframe');
+              iframe.id = 'hidden_iframe';
+              iframe.name = 'hidden_iframe';
+              iframe.style.display = 'none';
+              document.body.appendChild(iframe);
+          }
+
+          // Submit the form
+          form.submit();
+
+          // Clean up form
+          document.body.removeChild(form);
+
+          // Show success message immediately
+          messageDiv.innerHTML = '<span class="text-success">✓ Successfully subscribed! Check your email for confirmation.</span>';
+          emailInput.value = '';
+
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+              messageDiv.innerHTML = '';
+          }, 5000);
+
+          // Show third page
+          setTimeout(() => {
+              takeAction();
+          }, 1000);
+      }
+
+      // Allow Enter key to submit email
+      document.addEventListener('DOMContentLoaded', function() {
+          const emailInput = document.getElementById('emailInput');
+          if (emailInput) {
+              emailInput.addEventListener('keypress', function(e) {
+                  if (e.key === 'Enter') {
+                      subscribeToMailingList();
+                  }
+              });
+          }
+      });
     </script>
-</body>
+  </body>
 </html>
