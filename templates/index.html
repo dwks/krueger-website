@@ -76,6 +76,10 @@
         line-height: 1.4;
       }
 
+      .card-body {
+        align-content: center !important;
+      }
+
       /* Card animations and transitions */
       .card[onclick*="handleCardClick"] {
         transition: all 0.3s ease-in-out;
@@ -151,11 +155,11 @@
       @media (min-width: 1400px) {
         /* Very wide screens - compact */
         .card[onclick*="handleCardClick"] {
-          height: 8em !important;
+          height: 11em !important;
         }
         /* Detail column height = 4 cards + 3 gaps + padding */
         .detail-column {
-          height: calc(4 * 8em + 3 * 1rem) !important;
+          height: calc(4 * 11em + 3 * 1rem) !important;
           position: relative;
           z-index: 5;
         }
@@ -164,11 +168,11 @@
       @media (min-width: 992px) and (max-width: 1399.98px) {
         /* Large screens - medium height */
         .card[onclick*="handleCardClick"] {
-          height: 9em !important;
+          height: 10em !important;
         }
         /* Detail column height = 4 cards + 3 gaps + padding */
         .detail-column {
-          height: calc(4 * 9em + 3 * 1rem) !important;
+          height: calc(4 * 10em + 3 * 1rem) !important;
           position: relative;
           z-index: 5;
         }
