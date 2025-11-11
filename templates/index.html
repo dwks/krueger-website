@@ -152,21 +152,7 @@
       }
 
       /* Responsive card heights */
-      @media (min-width: 1400px) {
-        /* Very wide screens - compact */
-        .card[onclick*="handleCardClick"] {
-          height: 11em !important;
-        }
-        /* Detail column height = 4 cards + 3 gaps + padding */
-        .detail-column {
-          height: calc(4 * 11em + 3 * 1rem) !important;
-          position: relative;
-          z-index: 5;
-        }
-      }
-
-      @media (min-width: 992px) and (max-width: 1399.98px) {
-        /* Large screens - medium height */
+      @media (min-width: 992px) {
         .card[onclick*="handleCardClick"] {
           height: 10em !important;
         }
@@ -177,6 +163,18 @@
           z-index: 5;
         }
       }
+
+      /* 
+      @media (min-width: 992px) and (max-width: 1399.98px) {
+        .card[onclick*="handleCardClick"] {
+          height: 10em !important;
+        }
+        .detail-column {
+          height: calc(4 * 10em + 3 * 1rem) !important;
+          position: relative;
+          z-index: 5;
+        }
+      } */
 
       @media (max-width: 991.98px) {
         /* Small screens - unrestricted height */
