@@ -92,7 +92,7 @@ ai_facts = [
     <iframe src="https://www.youtube.com/embed/WiTN4TYLG5c?si=G0nBFCg6ogR_8I0R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<p>Tests that measure AI progress are often quickly aced. Recent examples involve <a target="_blank" href="https://epoch.ai/benchmarks/gpqa-diamond">PhD-level</a>PhD-level knowledge and reasoning</a>, or <a target="_blank" href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">PhD-level</a>programming tasks that take hours</a>.</p>
+<p>Tests that measure AI progress are often quickly aced. Recent examples involve <a target="_blank" href="https://epoch.ai/benchmarks/gpqa-diamond">PhD-level</a> knowledge and reasoning</a>, or <a target="_blank" href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">programming tasks that take hours</a>.</p>
 
 <p class="text-center"><a target="_blank" href="static/img/ai-tasks.png"><img src="static/img/ai-tasks.png" alt="AI Task Timelines" class="img-fluid" style="width: 100%;" /></a></p>
 """
