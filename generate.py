@@ -88,9 +88,7 @@ ai_facts = [
         'content': """
 <p><a target="_blank" href=""https://ourworldindata.org/grapher/exponential-growth-of-computation-in-the-training-of-notable-ai-systems?time=2012-12-03..latest&country=1.5x%2Fyear+between+1950%E2%80%932010~Theseus~Perceptron+Mark+I~AlexNet~GPT-1~GPT~GPT-4~GPT~Gemini+1.0+Ultra~Transformer+%282017%29~4.3x%2Fyear+between+2010%E2%80%932025~DNN+EM+segmentation">Scaling up</a> “deep learning” has driven rapid progress in AI, <a target="_blank" href="https://www.vox.com/future-perfect/460222/ai-forecasting-tournament-superforecaster-expert-tetlock#:~:text=Both%20the%20AI,from%20domain%20experts.%E2%80%9D">surprising experts</a>.  Even AI “skeptics” <a target="_blank" href="https://80000hours.org/2025/06/3-reasons-agi-might-still-be-decades-away/#:~:text=Importantly%2C%20many%20people,30%20years%20away.">think</a> human-level AI could arrive in a decade or two.</p>
 
-<div class="embed-responsive embed-responsive-16by9 mb-3">
-    <iframe src="https://www.youtube.com/embed/WiTN4TYLG5c?si=G0nBFCg6ogR_8I0R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+<p class="text-center"><a target="_blank" href="static/img/willsmithgif.gif"><img src="static/img/willsmithgif.gif" alt="AI generated Will Smith video comparing 2023 and 2024" class="img-fluid" style="width: 95%;" /></a></p>
 
 <p>Tests that measure AI progress are often quickly aced. Recent examples involve <a target="_blank" href="https://epoch.ai/benchmarks/gpqa-diamond">PhD-level</a> knowledge and reasoning</a>, or <a target="_blank" href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/">programming tasks that take hours</a>.</p>
 
